@@ -151,7 +151,7 @@ fi
 unset env
 
 eval "$(starship init bash)"
-eval "$(zoxide init bash)"
+eval "$(zoxide init bash --cmd zd)"
 
 export PATH="/home/dan/.cargo/bin:/snap/bin:$PATH"
 
