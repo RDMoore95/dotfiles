@@ -1,0 +1,110 @@
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$cmd_duration\
+$fill\
+$python\
+$nodejs\
+$time\
+$line_break\
+$character\
+"""
+
+palette = "rose-pine-moon"
+
+[palettes.rose-pine-moon]
+background = '#232136'
+surface    = '#2a273f'
+overlay    = '#393552'
+muted      = '#6e6a86'
+subtle     = '#908caa'
+text       = '#e0def4'
+love       = '#eb6f92'
+gold       = '#f6c177'
+rose       = '#ea9a97'
+pine       = '#3e8fb0'
+foam       = '#9ccfd8'
+iris       = '#c4a7e7'
+ash        = '#9aa894'
+sage       = '#c9c8a8'
+hlgt-low   = '#2a283e'
+hlgt-med   = '#44415a'
+hlgt-high  = '#56526e'
+persian    = '#d88bbd'
+
+[directory]
+format = "[ $path]($style)[$read_only]($read_only_style)"
+style = "fg:foam"
+truncation_length = 3
+truncation_symbol = "…/"
+read_only = "󰌾"
+read_only_style = "fg:love"
+
+[character]
+success_symbol = "[ ❯](iris)"
+error_symbol = "[ ❯](love)"
+vimcmd_symbol = "[ ❮](sage)"
+
+[git_branch]
+# format = "[$symbol:$branch]($style)"
+format = "[ $branch]($style)"
+style = "fg:gold"
+symbol = ""
+
+[git_status]
+disabled = false
+format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](fg:persian)($ahead_behind$stashed)](fg:love)"
+# style = "fg:love"
+conflicted = '󱣳'
+ahead = ''
+behind = ''
+diverged = ''
+up_to_date = '[ ✓](fg:sage)'
+untracked = ''
+stashed = '≡'
+modified = ''
+staged = ''
+renamed = '󰄾'
+deleted = ''
+typechanged = ''
+# NOTE: if using on WSL insert the line below pointing to the
+# path to a Windows Starship executable
+# windows_starship = ''
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "bright-black"
+
+[cmd_duration]
+format = "[ $duration]($style)"
+style = "pine"
+min_time = 120_000
+min_time_to_notify = 600_000
+show_notifications = false
+disabled = false
+
+[fill]
+symbol = " "
+
+[time]
+disabled = false
+format = "[ $time]($style)"
+style = "fg:iris"
+time_format = "%I:%M%P"
+use_12hr = true
+
+[python]
+format = "[$virtualenv]($style)"
+style = "fg:ash"
+disabled = false
+symbol = ' '
+
+[nodejs]
+style = "fg:ash"
+format = "[$symbol$version]($style)"
+disabled = false
+symbol = "󰎙 "

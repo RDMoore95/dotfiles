@@ -1,0 +1,23 @@
+# [flavor]
+# use = "rose-pine"
+# use = "kanagawa"
+
+[status]
+separator_open = ""
+separator_close = ""
+separator_style = { fg = "#2A273F", bg = "#2A273F" }
+
+mode_normal = { fg = "#232136", bg = "#ea9a97", bold = true }
+mode_select = { fg = "#232136", bg = "#3e8fb0", bold = true }
+mode_unset = { fg = "#232136", bg = "#eb6f92", bold = true }
+
+progress_label = { fg = "#e0def4", bold = true }
+progress_normal = { fg = "#232136", bg = "#2A273F" }
+progress_error = { fg = "#eb6f92", bg = "#2A273F" }
+
+# Permissions
+permissions_t = { fg = "#3e8fb0" }
+permissions_r = { fg = "#f6c177" }
+permissions_w = { fg = "#eb6f92" }
+permissions_x = { fg = "#9ccfd8" }
+permissions_s = { fg = "#56526e" }

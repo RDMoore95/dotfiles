@@ -1,0 +1,2970 @@
+ls
+la
+ls -a
+t
+tmux
+ls
+pwd
+ls -a
+ls .config/nushell/
+z
+cd .config/nushell/
+ls
+hx
+nvim config.nu
+eza
+nvim config.nu
+helix config.nu
+pacman -Ss nupm
+yay -Ss nupm
+pacman -Ss nupm
+helix config.nu
+cd /
+fzf
+ls
+ls usr/bin/nu
+cd ~/.config/nushell/
+ls
+helix config.nu
+cd /
+ls
+ls etc
+ls etc | grep nu
+ls etc/shells
+cat etc/shells
+ls
+ls usr/
+ls usr/lib
+ls usr/lib | grep nu
+ls usr/local/
+ls usr/local/share/
+ls usr/local/share/man
+ls usr/src/
+ls lib/
+ls lib/ | grep nu
+echo $NU_LIB_DIRS
+echo $enb.NU_LIB_DIRS 
+echo $env.NU_LIB_DIRS 
+echo $env.NU_PLUGIN_DIRS
+echo $env.PATH
+pwd
+cd ~
+pwd
+echo $nu.config-path
+echo $nu.env-path
+echo $nu.home-path
+echo $nu.os-info
+echo $nu.startup-time
+echo $nu.plugin-path
+echo $nu.is-interactive
+echo $nu.is-login
+echo $nu.loginshell-path
+echo $nu.history-enabled
+echo $env.NU_LIB_DIRS
+cd .config/nushell/
+ls
+helix config.nu
+ls
+exit
+ls
+cd .config/nushell/
+ls
+helix config.nu
+ls
+helix config.nu
+echo $theme
+echo $catppuccin
+helix config.nu
+ls
+ls .config/starship.toml
+pacman -Ss vivid
+sudo pacman -S vivid
+cd .config/nushell/
+ls
+helix .bashrc
+helix config.nu
+helix env.nu
+pacman -Ss atuin
+sudo pacman -S atuin
+helix env.nu
+cd .config/nushell/
+x
+z
+zi
+z .config/nushell/
+echo $env.NU_VERSION
+pwd
+ls
+pwd
+z
+zi
+ls
+la
+ls -a
+cd .cache/
+ls
+ls starship/
+bat
+bat starship/init.nu
+cat starship/init.nu
+bat starship/init.nu
+kitty
+z con
+bat nvim/lua/custom/plugins/alpha.lua
+z
+zi
+lg
+z
+t
+tmux
+ls
+ls -l
+ls
+ls -l
+ls -a
+ls -A
+ls -al
+z h
+helix hyprland.conf
+z Main
+ls
+cd `0 Utility/`
+cd ..
+helix
+ls
+pwd
+z Main
+kitty
+pacman -Q starship
+echo $env.STARSHIP_SHELL
+env STARSHIP_LOG=trace starship timings
+kitt
+kitty
+pacman -Q ripgrep
+n
+nvim
+n
+nvim
+l
+z Music/
+z Main
+ls
+z
+z M
+env STARSHIP_LOG=trace starship timings
+git status
+df
+pacman -Ss ripgrep
+z .config/nvim/
+ls
+n
+nvim
+sudo pacman -S ripgrep
+ripgrep
+sensor
+stor
+sensor
+kitty
+bashtop
+sensors
+sensors 
+rg
+ls
+rg Main
+fzf
+z hel
+ls
+ls -a
+z Doc
+ls
+ls -a
+touch packages
+ls
+pacman -Q
+pacman -Q >> packages
+bat packages
+rm packages
+pacman -Q
+pacman -Q > packages.txt
+ls
+ls -a
+touch packages
+pacman -Q >> packages
+man pacman
+pacman -Q -p
+pacman -Q -p--packages
+pacman -Q -p--file
+man pacman
+pacman -Qe
+helix languages.toml
+pacman -Q evince
+pacman -Ss evince
+pacman -Ss sumatra
+yay -Ss sumatra
+yay -Ss grilo
+yay -Ss inxi
+inxi
+man inxi
+yay -Ss orca
+yay -Ss rygel
+yay -Ss simple-scan
+man simple-scan
+simple-scan -h
+yay -Ss sushi
+yay -Ss swaynv
+yay -Ss swaync
+yay -Ss tecla
+yay -Ss totem
+yazi
+yay -Ss yelp
+yay -Ss snapshot
+man atuin
+atuin 
+atuin -h
+atuin status
+yay -Ss tecla
+yay -Ss loupe
+yay -Ss sudo
+yay -Ss baobab
+yay -Ss brave
+yay -Ss fd
+sudo pacman -S ripgrep
+sudo pacman -S fd
+yay -Ss fzf
+yay -Q fzf
+yay -Qe
+yay -Qe | grep fzf
+man fzf
+ls
+fzf -h
+fzf
+ls
+ls -a
+ls -l
+mkdir testdir
+fzf
+rm -rf testdir/
+ls Templates/
+ls -a Templates/
+cd Templates/
+ls
+ls -a
+z
+cd $(fd . -type d | fzf)
+fd
+cd "$(fd . -type d | fzf)"
+fd .
+fd . -type d
+cd "./$(fd -type d | fzf)"
+kitty
+cd "./$(find -type d | fzf)"
+cd "./$(fd -t d | fzf)"
+kitty
+cd "./$(fd -t d | fzf)"
+cd  $(fd . -t d | fzf)
+cd "$(fd . -t d | fzf)"
+fd . -t d
+fd
+fd . -t d
+z h
+helix hyprland.conf
+helix "$(fzf)"
+ls -a
+yay -Ss carapace
+yay -S carapace
+yay -Ss carapace
+yay -Rs carapace
+yay -Ss carapace
+yay -S carapace-bin
+yay -Q carapace
+cd /usr/lib/debug/usr/bin
+ls
+bat carapace.debug
+sudo bat carapace.debug
+ls
+ls -a
+yay -Q
+yay -Qe | carapace
+yay -Qe | grep carapace
+yay -S carapace-bin
+sudo rm carapace.debug
+ls
+bat yay.debug
+nvim yay.debug
+yay -S carapace-bin
+ls
+pwd
+z hypr
+ls
+helix hyprland.conf
+z hypr
+ls
+ls .cache/
+helix
+z h
+helix hyprland.conf 
+z nu
+ls
+n
+nvim
+n
+nvim
+n
+nvim
+fzf | helix
+helix $'fzf'
+ls
+ls -a
+ls go
+yay -Q go
+yay -Ss go
+sudo pacman -S go
+ls
+ls -a
+ls
+cd Documents/
+ls
+rm packages
+ls
+mkdir testdir
+ls
+cd testdir/
+ls
+mkdir $'((date now) + 1day | format date '%F') Report'
+ls
+rm `2024-11-04 Report/`
+ls
+helix $'(fzf)'
+helix $'(fzf .)'
+helix $'(fzf)'
+touch test
+helix $'(fzf)'
+la
+lsl
+lal
+n.
+n
+h
+cfg status
+npm
+nvm
+kitty
+helix .bashrc 
+kitty
+hx
+h
+h.
+bat
+bat tmux-client-84329.log 
+rg
+cd Documents/testdir/
+ls
+n test
+bat test
+nf
+ls
+cd ..
+ls
+rm -rf testdir/
+ls
+yay -Ss nvm
+ls
+l
+la
+kitty
+yay -Ss nvm
+yay -S nvm
+nvm
+kitty
+ls
+ls /usr/share/nvm/
+lsl
+cd /usr/share/nvm/
+ls
+lsl
+z
+echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.bashrc
+helix
+h .bashrc
+kitty
+h .bashrc
+h
+nvm
+h
+cd /usr/share/nvm/
+ls
+bat init-nvm.sh
+cp init-nvm.sh ~/.nvm
+z ~/.nvm/
+ls
+mv init-nvm.sh init-nvm-nu.sh
+ls
+h
+nvm
+kitty
+yay -Ss npm
+sudo pacman -S npm
+npm
+yay -Q nvm
+yay -Qe | grep nvm
+yay -Qe 
+yay -Ss nvm
+yay -Rs nvm
+l
+ls -CF
+ls
+ls -A
+ls -a
+la
+h
+h
+ls
+la
+ls .nvm
+rm -rf .nvm/
+ls .nvm
+cd /usr/share
+fzf
+ls
+fd . -t d
+nvm
+fd . -t d | grep nvm
+z
+cfd
+Videos
+fd . -t d
+fzf
+fzf -h
+man fzf
+fzf $'(fd . -t d)'
+Documents
+fzf $'(fd . -t d)'
+inxi
+sensors 
+fd . -t d
+ls
+cd Documents/
+ls
+pacman -Ss node
+pacman -Ss nodejs
+pacman -Rs nodejs
+sudo pacman -Rs nodejs
+node
+node -v
+which node
+cfd
+ls
+pwd
+cfd
+dir
+cfd
+z
+cfd
+z
+h
+t
+ls
+pacman -Ss fnm
+yay -Ss fnm
+yay -Ss fnm-bin
+yay -S fnm-bin
+node
+nodejs
+node -v
+fnm
+fnm list
+fnm install lts
+fnm list-remote
+fnm env
+fnm install 22.11.0
+npmpack
+fnm list
+fnm -h
+fnm use 22.11.0
+node -v
+fnm use default
+fnm -h
+fnm list
+fnm lit
+fnm list
+fnm -v
+node -b
+node -v
+echo $env.PATH
+la
+z /
+fd . -t d | grep fnm
+fd . -t d | grep .fnm
+fzf
+ls
+la
+fnm env --json
+z
+fs .local/
+ls .local/
+ls 
+ls .local/share/
+node -v
+fnm list
+fnm use default
+node -v
+fnm list
+echo $env.FNM_DIR
+echo $env.FNM_MULTISHELL_PATH
+fnm use default
+node -v
+echo $env.FNM_ARCH
+echo $env.FNM_DIR
+ls ~/.local/share/fnm/
+fnm use default
+node -v
+echo $env.FNM_BIN
+echo $env
+uniq
+fnm use default
+la
+cd .local/share/fnm/aliases/
+ls
+cd ..
+ls node-versions/
+ls nodejs/
+cd ..
+ls
+cd fnm
+ls
+ls node-versions/
+ls aliases/
+ls nodejs/
+ls nodejs/lib/node_modules/npm/
+ls nodejs/lib/node_modules/npm/node_modules/promzard/
+ls nodejs/lib/node_modules/npm/node_modules
+z
+fnm env
+fnm env --json
+uniq
+fnm env --json
+ls /run/user/1000/fnm_multishells
+node -v
+fnm use 22.11.0
+fnm use system
+node -v
+fnm use 22.11.0
+node -b
+node -v
+bat $env.PATH
+echo $env.PATH
+fnm
+fnm list
+fnm env --json
+node -v
+echo $env.PATH
+echo $env
+echo $env.PATH
+h
+echo $env.PATH
+fnm use default
+node -v
+fnm use system
+node -v
+fnm use default
+node -v
+which fnm
+ls /run/user/1000/fnm_multishells/3070_1730699581541/bin/
+fnm use default
+node -v
+h
+node -v
+fnm use default
+fnm use system
+node -v
+fnm use default
+node -v
+ls
+cfg status
+yay -Qe
+z Ma
+lg
+ls
+la .git
+npm
+t
+cd fnm
+config nu
+config nu 
+ls
+z hyp
+h hyprland.conf 
+hx --health
+h --health
+sensors 
+sensors
+ls
+la
+cfg status
+cfg add .bash_aliases
+cfg add .bashrc
+cfg add .config/helix
+bat .bash_profile 
+cfg status
+cfg add .bash_profile
+bat .bash_logout 
+yay -Ss byobu
+cfg add .config/yazi/
+cfg add .config/alacritty
+ls .config/alacritty
+la
+cfg add .tmux.conf
+ls .tmux/
+ls .tmux/plugins/tmux/
+cfg status
+cfg add .config/hypr/
+cfg add .config/helix/
+cfg add .config/starship.toml
+cfg add .config/pop-shell/
+ls .config/pop-shell/
+bas .config/pop-shell/config.json
+bat .config/pop-shell/config.json
+la
+bat .zoxide.nu 
+config nu
+config env Desktop/
+config env 
+cfg status
+cfg add .config/nushell/
+ls .npm/
+ls .config/obsidian/
+ls .config/obsidian/Dictionaries/
+bat .config/obsidian/Dictionaries/en-US-10-1.bdic 
+bat ".config/obsidian/Custom Dictionary.txt" 
+cfg status
+cd .config/atuin/
+ls
+bat config.toml 
+z
+bat .gitignore 
+git status
+cfg status
+cfg restore --staged .config/nushell/
+cfg status
+cd .config/nushell/
+ls
+cfg add env.nu
+cfg add config.nu
+z
+la
+bat .viminfo 
+cfg status
+bat .config/yazi/yazi.toml
+bat .config/.gsd-keyboard.settings-ported 
+ls .config/gtk-4.0/
+ls .config/gtk-3.0/
+bat .config/gtk-3.0/bookmarks
+ls
+ls .tmux.conf
+ls .tmux/
+la
+cfg status
+ls .ssh/
+echo .config/nushell/history.txt >> .gitignore
+bat .gitignore 
+echo ".config/nushell/history.txt" >> .gitignore
+bat .gitignore 
+h .gitignore 
+cfg status
+ls .cache
+ls
+la
+cfg status
+bat tmux-client-84329.log 
+h --health
+t
+h --health
+ls
+la
+z hyp
+h hyprland.conf 
+z
+z h
+hf 
+h hyprland.conf 
+t
+ls
+la
+hf
+bat Pictures/wallpapers/perfect-blue-poster.jpg 
+ls ~/Pictures/wallpapers/perfect-blue-poster.jpg
+pacman -Ss hyprpaper
+sudo pacman -S hyprpaper
+hyprctl monitors
+hyprctl -h
+hyprctl workspaces
+h
+t
+pwd
+cd .config/hypr/
+touch hyprpaper.conf
+h hyprpaper.conf 
+h
+sudo pacman -S wofi
+h
+sudo pacman -S waybar
+sudo pacman -S ttf-font-awesome
+waybar
+pwd
+cd .config
+ls
+mkdir waybar
+cd waybar/
+touch config.jsonc
+waybar
+sudo pacman -Ss hyprshot
+yay -Ss hyprshot
+yay -S hyprshot
+waybar
+yay -Q | grep pipewire
+yay -Q | grep hyprpol
+yay -Q | grep swaync
+notify-send "test"
+waybar
+yay -Ss commit
+yay -Ss commit | grep mono
+yay -Qe | grep mono
+yay -Qe | font
+yay -Qe | grep font
+h config.jsonc 
+ls
+rm config.jsonc
+ls
+touch config.jsonc
+touch mocha.css
+touch style.css
+ls
+h config.jsonc 
+cd ..
+ls
+mkdir wofi
+ls
+cd wofi
+touch style.css
+h style.css 
+pavucontrol
+pacman -Ss pavucontrol
+yay -Ss grim
+yay -Ss polkit-kde
+fzf
+cd ~/.config/BraveSoftware/Brave-Browser/aoojcmojmmcbpfgoecoadbdpnagfchel/1.0.15/
+ls
+open spencer-moore-1.jpg
+ls
+cd ..
+ls
+cfg status
+cfg add wofi
+cfg add waybar
+ls hypr/
+cfg add hypr/hyprland.conf
+cfg status
+cfg commit -m "hyprland files"
+cfg staus
+cfg status
+cfg push
+cfg status
+hf
+cfg add hypr/hyprpaper.conf
+cfg push
+cfg push --set-upstream origin main
+waybar
+logout
+exit
+h
+notify-send "test"
+sudo pacman -Ss hyprshot
+yay -Ss hyprshot
+sdkfjh
+ksdjhfklsjdhf
+ls
+cfg status
+z hy
+ls
+cfg add .
+cfg status
+cfg commit -m 
+cfg commit -m "hyprpaper"
+cfg push
+fzf
+fzf /usr/lib
+cd /usr/lib
+hf
+ls 
+z sddm/
+z sddm.conf.d/
+ls
+z
+z sddm
+z
+ls
+la
+z f
+z sddm
+ls
+kak
+pacman -Ss kakoune
+sudo pacman -Ss kakoune
+sudo pacman -S kakoune
+kak
+yay -Ss todoist
+cd Downloads/
+ls
+./Todoist-linux-9.9.0-x86_64-latest.AppImage
+Todoist-linux-9.9.0-x86_64-latest.AppImage
+chmod +x Todoist-linux-9.9.0-x86_64-latest.AppImage Todoist-linux-9.9.0-x86_64-latest.AppImage 
+Todoist-linux-9.9.0-x86_64-latest.AppImage
+lsa
+lsl
+./Todoist-linux-9.9.0-x86_64-latest.AppImage
+ls
+ls
+z Dow
+ls
+mv Todoist-linux-9.9.0-x86_64-latest.AppImage Todoist
+ls
+./Todoist
+bashtop
+ls
+z
+ls
+la
+cd .local/share/applications/
+ls
+bat mimeapps.list 
+z Down
+ls
+mv Todoist ~/.local/share/applications/
+ls
+wofi --show=drun
+ls /usr/share/applications/
+cd /usr/share/applications/
+bat Alacritty.desktop 
+bat obsidian.desktop 
+bat kitty.desktop 
+bat kitty-open.desktop 
+ls
+bat brave-browser.desktop 
+cd /usr/share/applications/
+ls
+bat obsidian.desktop 
+n obsidian.desktop 
+n Todoist-appimage.desktop
+sudo n Todoist-appimage.desktop
+ls
+touch Todoist-appimage.desktop
+sudo touch Todoist-appimage.desktop
+sudo nvim Todoist-appimage.desktop 
+n
+sudo n
+ls ~/.local/share/applications/
+sudo nvim Todoist-appimage.desktop 
+bat Todoist-appimage.desktop 
+chmod +x Todoist-appimage.desktop
+sudo chmod +x Todoist-appimage.desktop
+sudo update-desktop-database 
+wofi --show=drun
+wofi
+wofi --show=drun
+ls
+bat Todoist-appimage.desktop 
+nvim obsidian.desktop 
+cd ..
+z applications/
+z
+node -v
+npmpack
+n
+la
+zi
+ls
+mv Todoist 
+mkdir ~/Apps
+ls ~
+mv Todoist ~/Apps
+z ~/Apps/
+ls
+lsl
+Todoist
+ls
+sudo chmod +x Todoist 
+Todoist
+lsl
+./Todoist
+Todoist
+./Todoist
+z
+z app
+ls
+bat Todoist-appimage.desktop 
+sudo update-desktop-database 
+sudo nvim Todoist-appimage.desktop 
+sudo update-desktop-database
+z app
+bat Todoist-appimage.desktop 
+sudo mv Todoist-appimage.desktop Todoist.desktop
+bat Todoist.desktop 
+n Todoist.desktop 
+z Apps/Icons
+sl
+ls
+sudo nvim Todoist.desktop 
+sudo update-desktop-database
+Todo
+z
+Todoist
+ls
+la
+ls Apps/
+z Apps/
+z app
+ls
+la
+lsl
+z hyp
+n hyprland.conf 
+sudo pacman -Ss dex
+sudo pacman -S dex
+dex
+ls
+lsl
+ls
+sudo rm Todoist.desktop 
+ls
+ls | grep Todo
+z Apps
+ls
+dex -c Todoist
+ls
+bat Todoist.desktop 
+rm Todoist.desktop
+ls
+dex -c Todoist -t /usr/share/applications
+sudo dex -c Todoist -t /usr/share/applications/
+ls
+bat Alacritty.desktop 
+bat Todoist.desktop 
+sudo update-desktop-database
+lsl
+sudo nvim Todoist.desktop
+sudo update-desktop-database
+bashtop
+n
+iwctl
+todoist
+Todoist
+nf
+z Main
+git status
+lg
+ls
+git status
+lg
+z M
+lg
+git status
+z Scripts
+lg
+git pill
+git pull
+z Main
+z Scripts
+git pull origin main
+lg
+git branch 
+lg
+ls
+bat Util/Vault/DataNotes.js 
+cd Main
+z Main
+lg
+z hyp
+ls
+notify-send "test"
+kak
+mkdir -p $HOME/.config/kak/plugins<\n>git clone https://github.com/andreyorst/plug.kak.git $HOME/.config/kak/plugins/plug.kak
+ls
+ls .config/kak
+ls
+z .config/kak/
+ls
+n kakrc 
+kak
+z
+nf 
+k
+n kakrc 
+kf 
+k kakrc 
+k
+k kakrc
+k
+k kakrc 
+k
+k kak
+k kakrc 
+k kakrc
+k
+sudo pacman -Ss hyprpicker
+sudo pacman -S hyprpicker
+pacman -Ss wl-clip
+sudo pacman -S wl-clipboard
+pacman -Ss clipboard
+yay -Q | grep clip
+pacman -Q | grep clip
+yay -S clipboard
+yay -S clipse
+hyprpicker
+clipse
+k kakrc 
+t
+nf 
+hyprpicker
+yay -Ss sddm
+yay -Q | grep sddm
+yay -Q | grep qt5
+yay -Q | grep xorg
+yay -Q | grep gdm
+z Main
+ls
+lg
+sudo pacman -S pacutils
+paclog
+paclog | grep installed
+pacman -Ss jq
+z Main
+lg
+pacman -Q | grep spell
+z /
+fzf
+ls
+ls usr/lib64/obsidian/
+ls
+cd home
+ls
+x
+z
+ls
+la
+fzf
+z .config/obsidian/
+ls
+bat Dictionaries/en-US-10-1.bdic "Custom Dictionary.txt" 
+pacutils
+pacman -Q | grep pac
+man pacutils
+paclog | grep installed
+htop
+bashtop
+ps
+ps | grep obsidian
+ps | grep electron
+ps
+ps d
+ps | grep electron
+ps | grep obsidian
+ps | grep electron
+z hyp
+z
+ps | grep electron
+ps
+ps | grep todoist
+nf
+ps
+ps | grep electron
+ps | grep obsidian
+lsof
+pacman -Ss lsof
+sudo pacman -S lsof
+ps | grep electron
+ps
+ps | where name = electron31 
+ps | where name == electron
+lsof 
+ps | where name == electron
+lsof | grep 12543
+lsof | grep 12543 | grep spell
+lsof | grep 12543 | grep dic
+bat Dictionaries/en-US-10-1.bdic
+lsof | grep 12543 | grep dic
+lsof | grep 12543 | grep dic | detect columns 
+lsof | detect columns 
+man lsof
+lsof | detect columns | where name == electron
+lsof | detect columns | where name =~ electron
+lsof | detect columns | where command == electron
+ps | where name == electron
+lsof | detect columns | where pid == 12543
+ps
+bashtop
+ps
+ps | where name == electron
+for $x in 1..3 { print $x }
+config nu 
+z
+ls
+mkdir projects
+ls
+z projects
+ls
+zi
+ls
+touch times
+n times.py
+ls
+mkdir times
+mv times times
+mv times times/
+ls
+cd times
+mkdir times/
+rm times
+mkdir times
+ls
+cd times
+touch times
+touch times.py
+ls
+n times.py 
+n times.py
+python3.12 
+z p
+z pro
+z times
+ls
+python3.12 times.py
+bat times
+python3.12 times.py
+bat times
+n times
+n
+ls
+z ob
+zi
+ls
+n "Custom Dictionary.txt" 
+n "Custom Dictionary.txt"
+bat "Custom Dictionary.txt" 
+n "Custom Dictionary.txt"
+ls
+la
+ls
+bat "Custom Dictionary.txt" 
+bat "Custom Dictionary.txt.backup" 
+bat "Custom Dictionary.txt" 
+bat "Custom Dictionary.txt.backup" 
+n "Custom Dictionary.txt" 
+bat "Custom Dictionary.txt" 
+ls
+cd ..
+rm -rf times/
+ls
+t
+cd
+t
+ls
+pacman -Qe | grep sddm
+yay -Q | grep sddm
+sudo pacman -S sddm-kcm
+systemctl list-jobs 
+systemctl status 
+systemctl disable sddm.service 
+pacman -Qe | grep gdm
+systemctl enable gdm.service
+nf
+echo $env.XDG_CURRENT_DESKTOP
+yay -Qe | grep pol
+sudo pacman -Qe | grep sddm
+sudo pacman -Rs sddm
+cfg status
+cfg add .config/alacritty/alacritty.toml
+cfg add .config/hypr/hyprland.conf
+z nu
+ls
+cfg diff config.nu
+cfg add config.nu
+ls
+cfg status
+z
+cfg status
+bat .config/Todoist/settings.json 
+z .config/Todoist/
+ls
+z
+cfg status
+bat .viminfo 
+cfg status
+cfg add .config/kak
+cfg status
+cfg restore --staged .config/kak/
+cfg status
+ls .config/kak/
+la .config/kak
+cfg status
+z kak
+ls
+la colors/
+bat kakrc
+ls
+la plugins/
+kak -help 
+kak --tutore
+yay -Ss dekta
+yay -Ss delta
+sudo pacman -S git-delta
+cfg status
+cfg delta .config/nushell/config.nu
+delta .config/nushell/config.nu
+ls
+la
+z .cfg
+ls
+lg
+bat config
+n config 
+git config 
+git config help.
+git config --list
+cd ..
+z
+git config --list --show-origin
+la
+bat .gitignore 
+git config --list --show-origin --show-scope 
+cfg diff .config/nushell/config.nu
+cfg status
+z nu
+ls
+cfg stats
+cfg status
+cfg restore --staged config.nu
+cfg status
+cfg diff config.nu
+ls
+la
+bat .git-prompt.sh 
+bat .gitconfig 
+git config --list
+z c
+z cfg
+bat .gitconfig 
+ls
+la
+bat config
+n .gitconfig 
+git config --list
+cfg status
+cfg status
+cfg diff config.nu
+z nu
+cfg diff config.nu
+h --health
+z
+ls
+la
+bat .gitconfig 
+n .gitconfig 
+git config --list
+z nu
+ls
+cfg diff config.nu
+ls
+la
+n .gitconfig
+git config --list
+kak -help 
+git config --list
+cfg status
+cfg add config.nu
+cfg status
+cfg status
+bat .config/kitty/kitty.conf 
+bat .config/lazygit/config.yml
+bat ".config/obsidian/Network Persistent State" 
+ls .config/obsidian
+cfg add `.config/obsidian/Custom Dictionary.txt`
+cfg status
+bat .config/mimeapps.list 
+cfg status
+bat .zoxide.nu 
+bat .zoxide.nu
+cfg status
+cfg commit -m "small updates to alacritty nushell and hyprland, added obsidian dictionary with all possible times -_-"
+cfg push
+ls
+la
+cfg add .gitconfig
+ls
+cfg status
+cfg commit -m "added git config, notable change is that i specified delta as the display output for diff"
+cfg push
+z Main
+lg
+ls .git
+la .git
+lg
+git status
+git stash list
+git stash pop
+lg
+git status
+git stash list
+lg
+la .git
+lg
+la .git
+z Maiun
+z Main
+ls
+la
+ls
+z Main
+lls
+ls
+la .obsidian/hotkeys.json
+bat .obsidian/hotkeys.json 
+n .obsidian/hotkeys.json 
+lg
+n .obsidian/hotkeys.json 
+ls
+la
+z Main
+lg
+ls
+n .obsidian/hotkeys.json 
+lg
+git status
+z .obsidian/
+ls
+bat hotkeys.json 
+cat -v hotkeys.json 
+yay -Ss obsidian
+yay -Rs obsidian
+z Main
+ls
+la
+lg
+pacman -Ss obsidian
+sudo pacman -S obsidian
+sudo pacman -Ss obsidian
+sudo pacman -Rs obsidian
+z ob
+z .ob
+cat -v snippets/active_tab_white.css 
+cat -e snippets/active_tab_white.css 
+cat -e hotkeys.json 
+obsidian
+cd /usr/share/applications/
+ls
+z
+z Doc
+ls
+la
+ls
+la
+ls -a
+lal
+chmod +x Obsidian-1.7.5.AppImage 
+lsl
+./Obsidian-1.7.5.AppImage
+sudo pacman -Ss fuse
+yay -Q | grep fuse
+sudo pacman -S fuse2fs
+pacman -Q | fuse
+pacman -Q | grep fuse
+./Obsidian-1.7.5.AppImage
+sudo pacman -S fuse2
+ls
+la
+z Doc
+ls
+./Obsidian-1.7.5.AppImage
+lg
+z Ma
+ls
+lg
+z Doc
+./Obsidian-1.7.5.AppImage
+lg
+z Main
+cd ..
+ls
+la
+cd ..
+ls
+rm Obsidian-1.7.5.AppImage
+ls
+sudo pacman -S obsidian
+ls
+la
+cfg status
+ls
+z Main
+lg
+n .obsidian/hotkeys.json 
+lg
+la .got
+la .git
+lg
+z Main
+z Scripts
+ls
+lg
+z Main
+lg
+z .obsidian/
+ls
+prettier -h
+n hotkeys.json 
+n hotkeys.json
+n hotkeys.json 
+ls
+z Doc
+ls
+touch test.json
+n test.json 
+n test.json
+rm test.json
+cfg status
+ls
+n hotkeys.json 
+z Main
+lg
+n .obsidian/hotkeys.json 
+ls
+la
+z Mai
+n .obsidian/hotkeys.json 
+n
+n .obsidian/hotkeys.json 
+z Main
+lg
+n
+h
+n
+ls
+zi
+h
+n
+t
+n
+sensors
+fzf
+hyprpicker
+nf 
+z .config/waybar/
+n
+z way
+ls
+n
+z waya
+z way
+ls
+n style.css 
+z way
+n
+z way
+z hyp
+n
+lsblk
+pacman -Q | grep blue
+lsde
+lsdev
+procinfo
+pacman -Q | grep ls
+lsof
+lsof -h
+pacman -Q | grep ls
+bluez-utils
+bluez
+lspci
+lspci | grep blue
+pacman -Q | grep blue
+bluez
+man bluez
+man gnome-bluetooth
+gnome-bluetooth
+hcitool deb
+inxi
+inxi -Eaz
+btmgmt
+inxi -Eaz
+btmgmt
+sudo btmgmt
+bluetoothctl
+btmgmt
+sudo btmgmt
+waybar
+echo $SHELL
+echo $env.SHELL
+fastfetch
+sudo btmgmt
+extinfo
+sudo pacman -S lsusb
+sudo pacman -S usbutils
+lsusb
+pacman -Q | grep tlp
+pacman -Ss tlp
+sudo pacman -Ss bluetuith
+yay -Ss bluetuith
+yay -S bluetuith
+bluetuith
+sudo bluetuith
+uname -r; lsusb; dmesg|egrep -i 'blue|firm'
+uname; lsusb; dmesg|egrep -i 'blue|firm'
+yay -Ss bt
+ya -Q | grep bt
+yay -Q | grep bt
+pacman -Ss btusb
+sudo btmgmt
+inxi -Eaz
+inxi
+inxi -h
+inxi -EA
+inxi -Ea
+lsusb
+inxi -Ea
+scan on
+sudo bluetoothctl
+rfkill block bluetooth
+rfkill unblock bluetooth
+bluetoothctl
+bluetuith
+waybar
+nf 
+bluetuith
+nf
+waybar
+nf
+yay -Q | grep clip
+cfg status
+s
+z .config
+ls
+cfg status
+git add nvim/init.lua
+cfg add nvim/init.lua
+cfg add hypr/hyprland.conf
+cfg status
+cfg add obsidian/Custom Dictionary.txt
+cfg add `obsidian/Custom Dictionary.txt`
+cfg add waybar/style.css
+cfg add waybar/config.jsonc
+cfg status
+cfg status -u
+cfg status
+cfg commit -m "waybar config and bluetuith terminal popup"
+cfg push
+cfg status
+z
+la
+bat .gitconfig 
+z .cfg
+ls
+la
+z
+ls
+la
+bat .gitconfig
+cfg status -uno
+cfg status
+ls
+la
+wezterm
+cfg status -uno
+cfg status
+cfg status -uno
+z Main
+lg
+git status
+waybar
+bat .bashrc
+n .bashrc
+n
+nf
+n .bashrc
+nf
+cfg status -uno
+nf 
+ls
+echo $env.SHELL
+ls
+sensors
+bashtop
+shutdown
+journalctl 
+journalctl
+ls
+la
+pacman -Q | grep hyprpol
+sudo pacman -R hyprpolkitagent-git
+sudo pacman -R hyprpolkitagent-git-debug
+pacman -Q | grep hyprpol
+journalctl
+ls
+journalctl
+z /
+z usr/bin/bash
+z usr/bin
+ls
+lsl
+lsl | where name == bash
+chsh -h
+chsh -s /usr/bin/bash 
+ls
+lsl | where name == bash
+bat bash
+chsh -s /bin/bash 
+chsh -s /usr/bin/bash 
+chsh sddm 
+ls
+echo $env.PATH
+z
+node -v
+ls
+n .bashrc
+l
+ls
+bat .bashrc
+cfg status -uno
+cfg add .bashrc
+cfg commit -m "no idea how .bashrc was changed, but I guess it was something windows did. somehow a \r\n was added to the end of the file and that screwed up the PATH, which made me unable to execute any bash commands"
+cfg push
+waybar
+z /
+fzf
+waybar
+sensors
+sensors 
+sensors
+nf 
+ls
+z /
+fzf
+z way
+z /
+fzf
+waybar
+ls
+n
+waybar
+nf
+cfg status -uno
+cfg add .config/hypr/hyprland.conf
+ls .config/waybar/
+cfg add .config/waybar/
+cfg status -uno
+cfg commit -m "waybar finished for now"
+cfg push
+nf
+z nu
+ls
+n
+z Main
+lg
+echo $env.SSH_AGENT_PID
+z nu
+ls .ssh
+bashtop
+z nu
+n 
+t
+z
+ls .ssh
+bat .ssh/agent.env 
+bashtop
+z nu
+n env.nu 
+cfg status -uno
+cfg restore env.nu
+ls
+cfg status -uno
+n config.nu
+cfg status -uno
+cfg add config.nu
+cfg status -uno
+cfg commit -m "removed kakoune aliases"
+pacman -Ss keychain
+sudo pacman -S keychain
+bashtop
+ssh-agent
+bashtop
+z Main
+lg
+z
+bat .ssh/agent.env 
+ls
+ls .ssh
+bashtop
+ssh-add .ssh/id_ed25519
+bashtop
+ls .ssh
+rm .ssh/agent.env
+ls
+ls .ssh
+echo $env.SHELL
+ls .ssh
+systemctl list-unit-files 
+systemctl list-unit-files | grep ssh
+systemctl enable sshd.service
+systemctl list-unit-files | grep ssh
+ls
+echo $env.SHLVL
+ssh-agent 
+ssh-add .ssh/id_ed25519
+bashtop
+ssh-add -l
+bashtop
+shopt -q login_shell && echo 'Login shell' || echo 'Non-login shell'
+shopt -q login_shell ; echo 'Login shell' || echo 'Non-login shell'
+shopt -q login_shell and echo 'Login shell' or echo 'Non-login shell'
+shop
+nf
+echo $env.SHELL
+nf
+ls .ssh
+bashtop
+lg
+bashtop
+cfg status -uno
+cfg restore .bash_profile
+ls
+cfg status -uno
+cfg restore --staged .bash_profile
+cfg status -uno
+cfg restore .bash_profile
+cfg status -uno
+n .bash_profile 
+bashtop
+cfg ls-tree -r main --name-only
+nf
+cfgls
+cfg status -uno
+ls
+nf
+cfgls
+nf
+z nu
+ls
+cfg status -uno
+cfg status
+cfg status -uno
+cfg add config.nu
+cfg status -uno
+cfg commit -m "added cfgstat and cfgls to get status without untracked files and list of tracked files"
+cfg push
+bashtop
+z Mian
+z M
+lg
+ls
+cfgstat
+cfgls
+cfgstat
+keychain
+bashtop
+man keychain
+keychain -k all
+bashtop
+nf
+t
+z nu
+t
+z
+t
+z nu
+t
+ls
+nf
+tmux list-sessions 
+t attach-session 0
+z
+ls .ssh
+bat .ssh/id_ed25519 
+bashtop
+bat .ssh/id_ed25519
+bat .ssh/id_ed25519.pub 
+bat .ssh/known_hosts 
+bat .ssh/known_hosts.old 
+t attach-session 
+ls
+t
+n .tmux.conf 
+j
+man tmux
+n .tmux.conf 
+bashtop
+n .tmux.conf 
+t
+cfgstat
+cfg add .tmux.conf
+cfg commit -m "changed tmux prefix to Alt-Space (in config file Alt=M)"
+cfg push
+n .tmux.conf 
+keybindings list
+keybindings default 
+cfgstat
+z nu
+ls
+t
+z
+cfgstat
+n .tmux.conf 
+bash
+bashtop
+ls
+t attach-session 
+ls
+cfgstat
+cfgstat restore .tmux.conf
+cfg restore .tmux.conf
+cfgstat
+ls
+bashtop
+n .bashrc
+n .bash_profile 
+n .tmux.conf 
+n
+cfgstat
+cfg add .config/nvim/init.lua
+cfgstat
+cfg commit -m "added nvim keybind for searching all files inluding hidden, existing telescope file search keybind is unchanged."
+cfg push
+cfgstat
+z nu
+t
+man tmux
+z
+n .tmux.conf 
+t
+cfg add .tmux.conf
+cfgstat
+cfg commit -m "changed tmux kill-server command to prefix+End"
+cfg push
+la .config
+la .config/bluetuith/
+nf
+la .config/bluetuith/
+cfg add .config/bluetuith/bluetuith.conf
+cfg commit -m "added bluetuith.conf, which changes quit keybind to q from Q"
+cfgstat
+nf
+bashtop
+ssh-add -l
+ssh-add
+ssh-add -l
+man ssh-add
+z Main
+lg
+z
+n .tmux.conf 
+cfgstat
+ssh-add -l
+ssh-add
+ssh-add -l
+ssh-add
+state=$(ssh-add -l >| /dev/null 2>&1)
+state=$(ssh-add -l >| /dev/null out+err>)
+state=$(ssh-add -l >| /dev/null 2>&1)
+state=$(ssh-add -l >| /dev/null 2+1)
+ssh-add -l
+bashtop
+ssh-add
+state = ssh-add -l
+state = $'(ssh-add -l)'
+ssh-add pl
+ssh-add -l
+ssh-agent
+ssh-add
+bashtop
+cfgstat
+bashtop
+do --env {<\n>    let ssh_agent_file = (<\n>        $nu.temp-path | path join $"ssh-agent-($env.USER? | default $env.USERNAME).nuon"<\n>    )<\n><\n>    if ($ssh_agent_file | path exists) {<\n>        let ssh_agent_env = open ($ssh_agent_file)<\n>        if ($"/proc/($ssh_agent_env.SSH_AGENT_PID)" | path exists) {<\n>            load-env $ssh_agent_env<\n>            return<\n>        } else {<\n>            rm $ssh_agent_file<\n>        }<\n>    }<\n><\n>    let ssh_agent_env = ^ssh-agent -c<\n>        | lines<\n>        | first 2<\n>        | parse "setenv {name} {value};"<\n>        | transpose --header-row<\n>        | into record<\n>    load-env $ssh_agent_env<\n>    $ssh_agent_env | save --force $ssh_agent_file<\n>}
+ssh-add -l
+state = $'(ssh-add -l)'
+let state = $'(ssh-add -l)'
+echo $state
+state
+echo $env.state
+echo state
+echo $state
+let state = $'(ssh-add -l)'
+state
+bashtop
+ssh-add
+let var = ''
+echo $var
+let var = 'test'
+echo $var
+let var = ''
+ssh-add -l | str join $var
+echo $var
+ssh-add -l | str join var
+echo $var
+do --env {<\n>    let ssh_agent_file = (<\n>        $nu.temp-path | path join $"ssh-agent-($env.USER? | default $env.USERNAME).nuon"<\n>    )<\n><\n>    if ($ssh_agent_file | path exists) {<\n>        let ssh_agent_env = open ($ssh_agent_file)<\n>        if ($"/proc/($ssh_agent_env.SSH_AGENT_PID)" | path exists) {<\n>            load-env $ssh_agent_env<\n>            return<\n>        } else {<\n>            rm $ssh_agent_file<\n>        }<\n>    }<\n><\n>    let ssh_agent_env = ^ssh-agent -c<\n>        | lines<\n>        | first 2<\n>        | parse "setenv {name} {value};"<\n>        | transpose --header-row<\n>        | into record<\n>    load-env $ssh_agent_env<\n>    $ssh_agent_env | save --force $ssh_agent_file<\n>}
+ssh-add -l
+ssh-add -l | str join var
+echo $var
+$env.sshl = (ssh-add -l)
+echo $env.sshl
+$env.SSHLL = $'(ssh-add)'
+$env.SSHLL = $'(ssh-add -l)'
+let SSHL = $'(ssh-add -l)'
+echo $SSHL
+let SSHL = (ssh-add -l)
+echo $SSHL
+let $SSHL = (ssh-add -l)
+echo $SSHL
+ssh-add -l
+ssh-add
+ssh-add -l
+bashtop
+let var = 'test'
+echo $var
+let sshl = (ssh-add -l)
+echo $sshl
+let sshl = ''
+echo $sshl
+let sshl = 'sshl'
+echo $sshl
+let sshl = ^'ssh-add -l'
+let sshl = ^'(ssh-add -l)'
+ssh-add
+let sshl = ^ssh-add -l
+echo $sshl
+ssh-agent -c
+let sshl = ^ssh-add -l | lines
+echo $sshl
+ssh-add
+let sshl = ^ssh-add -l | lines
+echo $sshl
+ssh-add -l
+bashtop
+ssh-add -l
+let sshl = ^ssh-add -l | lines
+echo $sshl
+let sshl = ^ssh-add -l | lines | find "no"
+echo $sshl
+ssh-add
+let sshl = ^ssh-add -l | lines | find "no"
+echo $sshl
+$sshl | length
+bashtop
+ssh-add -l
+nf
+cfgstat
+z nu
+cfg add env.nu
+cfgstat
+cfg commit -m "nushell starts ssh-agent"
+cfg push
+z Main
+lg
+ssh-add -l
+z
+z M
+ls
+z
+z M
+lg
+git status
+z
+cfgstat
+ssh-add -l
+hyprpicker
+#589FF5
+nf
+cfgstat
+n .tmux.conf 
+cfgstat
+cfg add `obsidian/Custom Dictionary.txt`
+cfg add `.config/obsidian/Custom Dictionary.txt`
+cfg add .config/hypr/hyprland.conf
+cfgstat
+cfg commit -m "hyprpicker key bind"
+cfg push
+nf
+awk '/\[ALPM\] installed/ { print $(NF-1) }' /var/log/pacman.log
+n
+z nvim
+ls
+n
+cfgstat
+z
+ls
+cfg status
+cfg add .config/nvim/lua/custom/plugins/marks.lua
+cfg commit -m "added marks nvim plugin"
+cfg push
+ls .config
+bat .config/pop-shell/config.json
+cfgstat
+z Main
+lg
+z Main
+lg
+z Main
+lg
+ssh-add -l
+ssh-add
+z nu
+n
+ssh-add -l
+lg
+z Scripts
+lg
+ssh-add -l
+pacman -Ss spotify
+yay -Ss spotify
+pacman -Ss spotify
+pacman -Ss bottom
+pacman -S bottom
+sudo pacman -S bottom
+bottom
+bot
+btm
+btm -h
+btm
+bashtop
+sudo pacman -R bashtop
+btom
+btm
+sudo pacman -Rs bashtop
+pacman -Ss spotify-player
+yay -Ss spotify-player
+yay -S spotify-player
+spotify-player authenticate
+spotify_player authenticate
+spotify_player
+cfgstat
+cfg status
+z Main
+lg
+systemctl --failed
+journalctl -b
+z
+ls
+ls Pictures/
+cfg add Pictures/wallpapers/
+cfg commit -m "added wallpapers"
+cfg push
+glxinfo
+pacman -Ss glxinfo
+sudo pacman -S mesa-utils
+glxinfo
+glxinfo | grep "direct rendering"
+yay -h
+yay -Syu
+sudo pacman -Syu
+ls
+z Main
+lg
+z Scripts
+ls
+nf
+lg
+nf
+lg
+z Main
+lg
+nf
+z Sc
+ls
+lg
+z M
+z Main
+lg
+z Scripts
+lg
+z Main
+lg
+z S
+z Scripts
+ls
+z Main
+git status
+z Scripts
+git status
+lg
+n
+lg
+z Main
+lg
+z Scripts
+lg
+z Mian
+z Main
+ls
+lg
+l
+lg
+z Sc
+lg
+z Main
+lg
+z Scripts
+lg
+nf 
+nf
+lg
+z Main
+lg
+z Scripts
+lg
+z Main
+lg
+z Scripts
+lg
+ls
+z Scripts
+ls
+z Util/Vault
+ls
+la
+n keys.js
+ls
+cd ..
+ls
+ls ..
+ls
+cd ..
+ls
+la
+bat .gitignore 
+lg
+z Main
+lg
+z Mian
+z Main
+lg
+ls
+fastfetch
+shutdown -h
+z Main
+nf
+n
+z nvim
+ls
+n
+z projec
+ls
+git clone git@github.com:RDMoore95/pink-lotus.git
+ls
+cd pink-lotus/
+ls
+n
+cd colors/
+ls
+mv pink_lotus.lua pink-lotus.lua
+ls
+n
+cd ..
+n
+git status
+git add .
+n
+ls
+ls colors/
+ls lua/lush_theme
+ls
+cd lua
+ls
+cd lush_theme/
+ls
+mv pink_lotus.lua pink-lotus.lua
+ls
+cd ../..
+n
+git add .
+lg
+n
+cd ..
+ls
+z pink
+zi
+n alacritty.toml 
+n alacritty.toml
+z nu
+n config.nu 
+z
+z nu
+n config.nu 
+ls
+z nu
+n config.nu 
+ls
+z nu
+n config.nu 
+ls
+z hyp
+ls
+n
+hyprshot
+ssh-add -l
+hyprshot -h
+echo $env.HYPRLAND_CMD
+echo $env.XDG_CURRENT_DESKTOP
+ls .config
+nf
+cfgstat
+lx
+ls
+pacman -Ss kitty
+sudo pacman -R kitty
+nf
+ls
+ls .config/kitty/
+ls
+ls .config/kitty/
+ls
+ls .config/kitty/
+ls
+sudo pacman -S kitty
+kitty
+ls
+sudo pacman -Ss kitty
+nf
+gsettings
+gsettings list-schemas
+gsettings
+gsettings list-keys org.gnome.desktop.default-applications.terminal
+gsettings get org.gnome.desktop.default-applications.terminal
+gsettings org.gnome.desktop.default-applications.terminal get exec
+gsettings list-children org.gnome.desktop.default-applications.terminal
+gsettings list-recursively org.gnome.desktop.default-applications.terminal
+ls
+bas
+ls
+nf
+z nu
+n
+ls
+nvim
+z nu
+n config.nu 
+ls
+z nu
+nf
+ls
+echo $TERM
+echo $env.TERM
+ls
+z
+ls
+la
+ls .config
+n config.nu 
+ls
+echo $env.TERM
+ls
+nf 
+ls
+open
+open Music
+open tmux-client-84329.log
+^open
+ls
+open "file:///home/dan/Pictures"
+https://google.com
+ls
+z proj
+ls
+touch test
+n test
+bat test
+z proj
+cat test
+z proj
+ls
+bat test
+z proj
+ls
+bat test
+echo $env.TERM
+nf
+xdg-settings
+xdg-settings --help
+xdg-settings --list
+xdg-settings get default-url-scheme-handler
+xdg-settings get default-web-browser
+man xdg-settings
+xdg-settings get default-web-browser
+xdg-settings get default-url-scheme-handler
+xdg-settings --list
+la
+pacman -Ss xdg
+pacman -Q | grep xdg
+ls
+la
+ils
+ls
+echo $env.XDG_DATA_DIRS
+echo $env.XDG_MENU_PREFIX
+echo $env.XDG_SESSION_TYPE
+echo $env.XDG_RUNTIME_DIR
+echo $env.XDG_SESSION_CLASS
+echo $env.XDG_SESSION_DESKTOP
+echo $env.XDG_CURRENT_DESKTOP
+echo $env.XDG_DATA_DIRS
+echo $env.XDG_SESSION_TYPE
+echo $env.XDG_MENU_PREFIX
+echo $env.XDG_RUNTIME_DIR
+echo $env.XDG_SESSION_DESKTOP
+echo $env.XDG_CURRENT_DESKTOP
+echo $env.XDG_SESSION_CLASS
+echo $env.XDG_BACKEND
+echo $env.XDG_SEAT
+xdg-settings --list
+man xdg-settings
+man xdg-mime
+man xdg-open
+pacman -Ss gio
+pacman -Ss GAppinfo
+gio
+gio help
+gio list
+gio open Desktop/
+echo $env.TERM
+gio mime Desktop/
+pacman -Q | grep gio
+yay -Ss gio
+yay -Q | grep gio
+z /
+nf
+xdg-mime -h
+xdg-mime --help
+xdg-mime query bin/
+z
+xdg-mime query tmux-client-84329.log
+xdg-mime default alacritty inode/directory
+z /
+fzf
+ls
+ls usr/lib/
+zi
+ls
+xdg-mime default Alacritty.desktop inode/directory
+ls
+z
+ls
+z appl
+bat kitty-open.desktop 
+bat Alacritty.desktop 
+bat kitty.desktop 
+xdg-mime default kitty.desktop inode/directory
+ls
+xdg-mime default Alacritty.desktop inode/directory
+xdg-mime default kitty.desktop inode/directory
+echo $env.TERM
+ls
+z
+ls
+z .config/
+bat mimeapps.list 
+ls Pictures/
+ls Pictures/wallpapers/
+sudo nautilus
+nautilus admin:/
+sudo nautilus admin:/
+nautilus admin:/
+ls
+z
+ls
+tmux
+z Main
+lg
+z Scripts
+lg
+z S
+z Scri
+ls
+lg
+z Main
+z Scripts
+z Main
+lg
+z Scripts
+n
+lg
+z Main
+lg
+journalctl -b
+journalctl
+journalctl -b
+journalctl
+sudo pacman -R gnome
+cfgstat
+cfg add .config/nvim
+cfgstat
+cfg add .config/hypr
+cfg add .config/nushell
+cfgs
+cfgstat
+cfg commit -m "rosepine for nvim and nushell, hyprshot"
+cfg push
+yay -Syu
+sudo fdisk
+sudo fdisk -l
+ls
+cd Downloads
+ls
+mv cachyos-desktop-linux-241110.iso cachyos.iso
+ls
+sudo fdisk -l
+ls
+sudo dd bs=4M if=cachyos.iso of=/dev/sda1 status=progress oflag=sync
+nf
+z Main
+git status
+z Scripts
+git status
+z Main
+lg
+git status
+z Scripts
+git status
+z Main
+pacman -Ss mad-db
+yay -Ss mad-db
+pacman -Ss bluez-utils
+pacman -Q | grep mesa
+pacman -Ss mesa-utils
+yay -Ss carapace
+yay -Ss qsv
+yay -Ss chrome
+yay -Ss mono
+yay -Ss commit-mono
+yay -Ss awesome
+yay -Ss font-awesome
+yay -Ss swaync
+yay -Ss hyprpol
+yay -Ss polkit-gnome
+yay -Q | grep polkit
+yay -Ss hyprpolgit
+yay -Ss hyprpolkit
+yay -S hyprpolkitagent-git
+nf
+n
+z hyp
+ls
+cfgstat
+cfg add hyprland.conf
+cfg commit -m "added hyprpolkitagent"
+cfg push
+z
+yay -Ss qt5
+z Main
+lg
+z Scripts
+lg
+z Main
+z
+pacman -Ss balena
+yay -Ss balena
+yay -S balena-etcher
+cd Downloads/
+ls
+fdisk -l
+z
+sudo fdisk -l
+chkdsk
+z Main
+lg
+fdisk -h
+sudo fdisk -x
+pacman -Ss dosfstools
+fsck
+fdisk -h
+ls
+z /
+ls
+la
+ls mnt
+la mnt
+ls
+cfgstat
+cfg add `.config/obsidian/Custom Dictionary.txt`
+cfg commit -m "dictionary update"
+cfg push
+nf 
+nf
+cfgstat
+cfg add .config/waybar/style.css
+cfg commit -m "waybar workspaces color"
+cfg push
+z Main
+lg
+ls
+sudo pacman -S fihs
+sudo pacman -S fish
+fzfz
+fzf
+nf 
+ls
+la
+pacman -Ss zsh
+sudo pacman -S zsh
+pacman -Ss oh-my-zsh
+yay -Ss oh-my-zsh
+yay -S oh-my-zsh-git
+ls /usr/share/oh-my-zsh/
+bat /usr/share/oh-my-zsh/README.md 
+cp /usr/share/oh-my-zsh/zshrc ~/.zshrc
+la
+bat .zshrc 
+echo $env.SHELL
+zsh
+ls
+la
+n .zshrc 
+zsh
+z Mian
+z Main
+n .zshrc 
+z Main
+zsh
+z Main
+n .zshrc 
+zsh
+ls
+z Scripts
+ls
+z
+z Main
+zsh
+fsh
+fish
+pacman -Ss antidote
+yay -Ss antidote
+yay -S zsh-antidote
+z
+n .zshrc 
+zsh
+ls
+n .zshrc 
+n .zsh_plugins.txt 
+zsh
+n .zshrc 
+zsh
+n .zshrc 
+zsh
+ls
+la
+cfg add .zshrc
+cfg add .zsh_plugins.txt
+bat .zsh_plugins.zsh 
+cfgstat
+bat .config/alacritty/alacritty.toml 
+cfg add .config/alacritty/alacritty.toml
+cfg `.config/obsidian/Custom Dictionary.txt`
+cfg add `.config/obsidian/Custom Dictionary.txt`
+cfg commit -m "zsh"
+cfg push
+pacman -Ss oilshell
+yay -Ss oil
+yay -Q | grep antidote
+pacman -Ss oil
+sudo pacman -S oil
+yay -Ss fish
+yay -Ss fisher
+sudo pacman -S fisher
+fish
+ls
+la
+fisher list
+fish
+ls
+cfgstat
+cfg add `.config/obsidian/Custom Dictionary.txt`
+cfg commit
+cfg commit -m "11-11-24 eod"
+cfg push
+z Main
+ls
+lg
+nf 
+nf
+z hyp
+which skel
+which nvim
+ls
+la .config/
+la .config/gtk-4.0/
+nf
+z way
+ls
+la
+bat config.jsonc config.jsonc 
+n hyprland.conf 
+n config.jsonc 
+waybar
+z way
+waybar
+sudo pacman -S swaylock
+pacman -Ss swaylock
+n config.jsonc 
+cd ..
+z .config/
+sudo pacman -S swaylock-fancy-git
+yay -S swaylock-fancy-git
+swaylock-fancy
+n
+z .config/
+waybar
+pacman -Ss pavucontrol
+sudo pacman -S pavucontrol
+waybar
+yay -Ss waybar-module-pacman-updates
+yay -Ss waybar-module-pacman-updates-git
+yay -S waybar-module-pacman-updates-git
+k
+yay -S waybar-module-pacman-updates-git
+rustup
+rustup default stable
+yay -S waybar-module-pacman-updates-git
+waybar
+fc-list
+waybar
+n
+ls
+la
+cfgstat
+cfg add waybar/
+cfg add hyprland/
+cfg add hypr/
+cfgstat
+ls
+z
+ls
+cfgstat
+cfg commit -m "changed waybar"
+cfg push
+la
+cfg status
+bat .zsh_plugins.zsh 
+bat .zshrc 
+z h
+nf
+cfgstat
+z hyp
+n
+z
+z .config/
+z wofi/
+ls
+bat style.css
+yay -Syu
+z hyp
+cfgstat
+cfg add .config/hypr/hyprland.conf
+cfg commit -m "hyprland update necessitated commenting out some lines"
+cfg push
+cfgstat
+nf 
+z ocn
+z con
+t
+ls
+la
+keybindings list 
+ls
+nf
+z .config/carapace/
+ls
+ls specs/
+ls bridge/
+ls bridge/bash/
+ls overlays/
+cd ..
+z nushell/
+ls
+n
+z nu
+n
+z
+t
+z nu
+n .tmux.conf 
+cfgstat
+n
+cfg add .tmux.conf
+cfg commit -m "changed tmux prefix back to Ctrl+Space"
+cfg push
+z
+cfg status
+cfgstat
+cfg status
+n .tmux.conf 
+cfgstat
+cfg status
+n .tmux.conf 
+t
+cfg status
+n .tmux.conf 
+cfg status
+cd .cargo/
+ls
+la
+bat registry/
+ls registry/
+z
+t
+ls
+cfg status
+sudo pacman -S sddm
+systemctl list-units 
+t
+t attach-session 
+t
+systemctl list-units
+sudo systemctl disable gdm.service 
+sudo systemctl enable sddm.service
+t attach-session 
+journalctl
+journalctl -b 
+echo $env.USER
+ssh-add -l
+ssh-add
+z nu
+ls
+n config.nu 
+n env.nu 
+cfgstat
+cfg add .config/nushell/env.nu
+cfg add .tmux.conf
+cfg add `.config/obsidian/Custom Dictionary.txt`
+cfg commit -m "tmux copy mode keybinds to be more like vim, nushell env wasn't finding USER after I changed my display manager to sddm"
+cfg push
+journalctl -b 
+ssh-add -l
+journalctl -b 
+sudo pacman -S thunar
+cfgstat
+cfg add .config/hypr/hyprland.conf
+cfg commit -m "changed file manager to thunar"
+cfg push
+z Maun
+z Main
+lg
+git fetch
+lg
+z Main
+lg
+ssh-add -l
+logout
+exit
+shutdown -h
+ssh-add -l
+w
+journalctl -b 
+loginctl session-status<\n>
+loginctl session-status
+cfgstat
+ls
+la
+z hyp
+ls
+n hyprland.conf 
+z wa
+n 
+nf
+cfgstat
+z way
+loginctl session-status
+w
+ssh-add -l
+w
+loginctl session-status
+journalctl -b 
+journalctl -b
+cfgstat
+cfg add .config/waybar/style.css
+cfg commit -m "changed workspaces buttons colors"
+cfg push
+sudo pacman -Ss virtual
+sudo pacman -S virtualbox
+virtualbox -h
+sudo /sbin/vboxconfig
+sudo vboxconfig
+virtualbox
+cd Downloads/
+ls
+la
+systemd-modules-load.service
+systemctl list-units
+systemctl enable systemd-modules-load.service 
+shutdown -h
+virtualbox
+ssh-add -l
+w
+loginctl session-status
+nf
+z hyp
+nf
+cd /etc/
+ls services
+bat services 
+which pkexec 
+pkexec -h
+man pkexec 
+thunar
+sudo shutdown -h
+bat .bashrc
+n .bashrc
+n .bash_profile 
+ssh-add -l
+z Main
+lg
+shutdown -h
+z Main
+lg
+ls
+la
+n .zshrc 
+t
+tmux list-keys | grep confirm-before
+z .tmux.conf
+tmux list-keys | grep confirm-before
+n .tmux.conf 
+t
+n .zsh_plugins.txt 
+zsh
+fsh
+fish
+zsh
+ls
+zsh
+exit
+fish
+ls
+la
+clear
+ls
+la
+clear
+ls
+la
+ls
+la
+clear
+echo $SHELL
+zsh
+z Main
+ls
+la
+clear
+lg
+exit
+echo $SHELL
+zsh
+ls
+la
+mv .zshrc .zshrc_old
+touch .zshrc
+zsh
+n
+clear
+t
+pacman -Q | grep zsh
+sudo pacman -R oh-my-zsh-git
+zsh
+n
+zsh
+ls .config
+cfgstat
+n .bashrc
+cfgstat
+cfg add .tmux.conf
+cfg commit -m 
+cfg commit -m = "tmux kill window and pane no longer prompt for confirmation"
+cfg commit -m "tmux kill window and pane no longer prompt for confirmation"
+cfgstat
+z hyp
+cfg diff hyprpaper.conf
+cfg diff hyprland.conf
+zsh
+ls
+z
+ls
+zsh
+l
+ls
+zsh
+echo env.SHELL
+echo $env.SHELL
+szh
+zsh
+nf 
+echo $env.SHELL
+zsh
+shutdown -h
+zsh
+ls
+n
+z .local/state/nvim/swap/
+ls
+rm %home%dan%.zshrc.swp
+zsh
+zsh
+nf
+zsh
+cfgstat
+cfg diff .config/hypr/hyprland.conf
+cfg diff .bashrc
+clear
+la
+touch .zsh_aliases
+zsh
+fd . -t d | grep .fnm
+ls
+zsh
+ls
+zsh
+nf
+ls
+zsh
+nf
+zsh
+ls
+zsh
+ls
+zsh
+clear
+zi
+ls
+t
+n
+ls
+n .zshrc 
+n .tmux.conf 
+t
+n .tmux.conf 
+l
+ls
+n .tmux.conf 
+ls
+la
+pwd
+cfgstat
+exit
+z
+z Scripts
+z Main
+ls
+la
+nf
+zd Main
+z 
+z Main
+z
+nf
+zd kitty
+z kitty
+n
+la
+exit
