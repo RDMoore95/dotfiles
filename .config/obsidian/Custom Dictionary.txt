@@ -1543,6 +1543,7 @@ nvim
 nvm
 openSUSE
 opensuse
+opi
 otf
 pacman
 pacutils
@@ -1580,4 +1581,4 @@ yazi
 zellij
 zoxide
 zsh
-checksum_v1 = 5c9ef806562084b51dd163e1cd0538a4
+checksum_v1 = b0696ce954ed12d8d479803f7fb4820e
