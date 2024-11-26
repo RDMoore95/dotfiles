@@ -83,3 +83,5 @@ if [ -f ~/.zsh_aliases ]; then
 fi
 
 eval "$(starship init zsh)"
+
+export PATH="/home/dan/.cargo/bin:$PATH"
