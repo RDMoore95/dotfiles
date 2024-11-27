@@ -77,7 +77,7 @@ setopt hist_find_no_dups
 
 zstyle ':completion:*:git:*' group-order 'main commands' 'alias commands' 'external commands'
 
-source '/usr/share/zsh-antidote/antidote.zsh'
+source '/home/dan/.antidote/antidote.zsh'
 antidote load
 
 if [ -f ~/.zsh_aliases ]; then

@@ -468,7 +468,7 @@ require('lazy').setup({
             plugins = {
               {
                 name = '@vue/typescript-plugin',
-                location = '/home/dan/.nvm/versions/node/v20.18.0/lib/@vue/typescript-plugin',
+                location = '/home/dan/.nvm/versions/node/v23.3.0/lib/@vue/typescript-plugin',
                 languages = { 'javascript', 'typescript', 'vue' },
               },
             },
@@ -532,7 +532,7 @@ require('lazy').setup({
       require('lspconfig').volar.setup {
         init_options = {
           typescipt = {
-            tsdk = '/home/dan/.nvm/versions/node/v20.18.0/lib',
+            tsdk = '/home/dan/.nvm/versions/node/v23.3.0/lib',
           },
         },
         filetypes = {
