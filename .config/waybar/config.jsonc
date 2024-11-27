@@ -11,10 +11,10 @@
     "custom/updates",
     "pulseaudio",
     "network",
-    "bluetooth",
-    "temperature",
-    "cpu",
-    "battery"
+    "bluetooth"
+    //"temperature",
+    //"cpu",
+    //"battery"
     //"clock"
   ],
   "hyprland/workspaces": {
@@ -37,43 +37,8 @@
     "sort-by-number": true,
     "active-only": false
   },
-  //"custom/updates": {
-  //  "format": "{} {icon}",
-  //  "return-type": "json",
-  //  "format-icons": {
-  //    "has-updates": "󱍷",
-  //    "updated": "󰂪"
-  //  },
-  //  "exec-if": "which waybar-module-pacman-updates",
-  //  "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 3600 --tooltip-align-columns"
-  //},
-  "custom/updates": {
-    "format": "({}){icon}",
-    "return-type": "json",
-    "format-icons": {
-      //"has-updates": "󱍷",
-      "has-updates": "󰚰",
-      "updated": ""
-    },
-    "exec-if": "which waybar-module-pacman-updates",
-    "exec": "waybar-module-pacman-updates --no-zero-output --interval-seconds 5 --network-interval-seconds 3600 --tooltip-align-columns"
-  },
-  "cpu": {
-    "interval": 1,
-    "format": "{icon0}{icon1}{icon2}{icon3}{icon4}",
-    "format-icons": [
-      "<span color='#c9c8a8'>▁</span>", // green
-      "<span color='#9aa894'>▂</span>", // blue
-      "<span color='#3e8fb0'>▃</span>", // white
-      "<span color='#9ccfd8'>▄</span>", // white
-      "<span color='#e0def4'>▅</span>", // yellow
-      "<span color='#f6c177'>▆</span>", // yellow
-      "<span color='#ea9a97'>▇</span>", // orange
-      "<span color='#eb6f92'>█</span>" // red
-    ]
-  },
   "temperature": {
-    "hwmon-path": "/sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon2/temp1_input",
+    "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp1_input",
     "critical-threshold": 80,
     //"format-critical": "{temperatureC}°C",
     //"format": "{temperatureC}°C"
@@ -98,30 +63,9 @@
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
     "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
   },
-  "battery": {
-    "states": {
-      "warning": 30,
-      "critical": 15
-    },
-    "format": "<span size='13000' foreground='#a6e3a1'>{icon} </span> {capacity}%",
-    "format-warning": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {capacity}%",
-    "format-critical": "<span size='13000' foreground='#E38C8F'>{icon} </span> {capacity}%",
-    "format-charging": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-    "format-plugged": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-    "format-alt": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {time}",
-    "format-full": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ],
-    "tooltip-format": "{time}"
-  },
   "network": {
     "format-wifi": "<span size='13000' foreground='#f6c177'>󰖩 </span>{essid}",
-    "format-ethernet": "<span size='13000' foreground='#f6c177'>󰈁 </span>Disconnected",
+    "format-ethernet": "<span size='13000' foreground='#f6c177'>󰈁 </span>Wired",
     "format-linked": "{ifname} (No IP)󰌙",
     "format-disconnected": "<span size='13000' foreground='#f6c177'>󰤯 </span>Disconnected",
     "tooltip-format-wifi": "Signal Strength: {signalStrength}%"
