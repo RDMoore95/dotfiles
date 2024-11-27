@@ -92,7 +92,7 @@ symbol = " "
 
 [time]
 disabled = false
-format = "[ $time]($style)"
+format = "[  $time]($style)"
 style = "fg:iris"
 time_format = "%I:%M%P"
 use_12hr = true
