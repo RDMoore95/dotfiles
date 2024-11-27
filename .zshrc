@@ -39,6 +39,7 @@ unset env
 
 # ZSH_THEME="bira"
 
+eval "$(zoxide init zsh --cmd z)"
 source <(fzf --zsh)
 
 # zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
@@ -47,6 +48,8 @@ zstyle ':completion:*' menu no
 
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza --oneline --long --no-permissions --no-user --color=always --icons --all --header --modified --sort=modified --reverse $realpath'
 zstyle ':fzf-tab:complete:cd:*' fzf-flags --height=45% --preview-window=right:80% --bind ctrl-y:preview-up --bind ctrl-e:preview-down
+zstyle ':fzf-tab:complete:z:*' fzf-preview 'eza --oneline --long --no-permissions --no-user --color=always --icons --all --header --modified --sort=modified --reverse $realpath'
+zstyle ':fzf-tab:complete:z:*' fzf-flags --height=45% --preview-window=right:80% --bind ctrl-y:preview-up --bind ctrl-e:preview-down
 
 # NOTE: I'm not sure if I need the following line somewhere 
 # autoload -U compinit && compinit
@@ -69,9 +72,10 @@ setopt hist_find_no_dups
 
 # export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optioal
 # zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
+zstyle ':completion:*' format $'\e[2;37m %d\e[m'
 # source <(carapace _carapace)
 
-# zstyle ':completion:*:git:*' group-order 'main commands' 'alias commands' 'external commands'
+zstyle ':completion:*:git:*' group-order 'main commands' 'alias commands' 'external commands'
 
 source '/usr/share/zsh-antidote/antidote.zsh'
 antidote load
@@ -83,7 +87,6 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-eval "$(zoxide init zsh --cmd cd)"
 
 eval "$(starship init zsh)"
 
