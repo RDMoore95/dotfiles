@@ -38,7 +38,7 @@ alias lsl='ls -1 --header --long'
 alias lal='la -1 --header --long'
 
 alias cl='clear'
-alias z='sudo zypper'
+alias zy='sudo zypper'
 
 function zf() {
   dir="$(fd . -t d -H | fzf --no-multi --preview 'eza --header --long --modified --all --no-user --no-permissions --icons --group-directories-last --sort=modified --color=always {}')"
