@@ -72,7 +72,7 @@ setopt hist_find_no_dups
 
 # export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optioal
 # zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
-zstyle ':completion:*' format $'\e[2;37m %d\e[m'
+# zstyle ':completion:*' format $'\e[2;37m %d\e[m'
 # source <(carapace _carapace)
 
 zstyle ':completion:*:git:*' group-order 'main commands' 'alias commands' 'external commands'
