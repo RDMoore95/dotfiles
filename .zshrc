@@ -41,14 +41,12 @@ unset env
 
 source <(fzf --zsh)
 
-# zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-# zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
-# zstyle ':completion:*' menu no
-# zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
-# zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+# zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
+zstyle ':fzf-tab:*' fzf-flags --color=fg:4,fg+:3 --bind=tab:accept
+zstyle ':completion:*' menu no
 
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1lhus --no-permissions --no-user --icons --git-ignore --group-directories-first --sort=accessed --color=always $realpath'
-zstyle ':fzf-tab:complete:cd:*' fzf-flags --height=35% --preview-window=right:80%
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza --oneline --long --no-permissions --no-user --color=always --icons --all --header --modified --sort=modified --reverse $realpath'
+zstyle ':fzf-tab:complete:cd:*' fzf-flags --height=45% --preview-window=right:80% --bind ctrl-y:preview-up --bind ctrl-e:preview-down
 
 # NOTE: I'm not sure if I need the following line somewhere 
 # autoload -U compinit && compinit
