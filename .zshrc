@@ -90,4 +90,4 @@ export NVM_DIR="$HOME/.nvm"
 
 eval "$(starship init zsh)"
 
-export PATH="/home/dan/.cargo/bin:$PATH"
+export PATH="/home/dan/.cargo/bin:/home/dan/go/bin:$PATH"
