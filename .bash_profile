@@ -16,6 +16,16 @@ if [ -d "$HOME/.local/bin" ] ; then
   PATH="$HOME/.local/bin:$PATH"
 fi  
 
+if [ -d "$HOME/.cargo/bin" ] ; then
+  PATH="$HOME/.cargo/bin:$PATH"
+fi
+
+if [ -d "$HOME/go/bin" ] ; then
+  PATH="$HOME/go/bin:$PATH"
+fi
+
+export PATH="/home/dan/.cargo/bin:/snap/bin:/home/dan/go/bin:$PATH"
+
 # env=~/.ssh/agent.env
 #
 # agent_load_env () { test -f "$env" && . "$env" >| /dev/null ; }
