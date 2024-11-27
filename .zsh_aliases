@@ -28,8 +28,12 @@ function nf() {
 alias lg='lazygit'
 alias yz='yazi'
 
-alias las='ls -a'
-alias lsl='ls -l'
+alias ls='eza -G --no-permissions --hyperlink --no-user --icons --group-directories-first --color=always'
+alias lsm='eza --long --header --modified --grid --no-user --no-permissions --no-user --hyperlink --icons --git-ignore --group-directories-first --sort=modified --color=always'
+alias lsa='eza --long --header --accessed --grid --no-user --no-permissions --no-user --hyperlink --icons --git-ignore --group-directories-first --sort=accessed --color=always'
+alias lam='eza --header --long --modified --grid --all --no-user --no-permissions --hyperlink --icons --git-ignore --group-directories-first --sort=modified --color=always'
+alias laa='eza --header --long --accessed --grid --all --no-user --no-permissions --hyperlink --icons --git-ignore --group-directories-first --sort=accessed --color=always'
+alias la='ls -a'
 
 alias cl='clear'
 

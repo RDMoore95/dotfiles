@@ -32,8 +32,6 @@ unset env
 # eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/minimal.toml)"
 # eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/zen.toml)"
 
-source '/usr/share/zsh-antidote/antidote.zsh'
-antidote load
 
 # NOTE: To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -41,14 +39,16 @@ antidote load
 
 # ZSH_THEME="bira"
 
-
 source <(fzf --zsh)
 
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
-zstyle ':completion:*' menu no
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
-zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+# zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+# zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+# zstyle ':completion:*' menu no
+# zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
+# zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1lhus --no-permissions --no-user --icons --git-ignore --group-directories-first --sort=accessed --color=always $realpath'
+zstyle ':fzf-tab:complete:cd:*' fzf-flags --height=35% --preview-window=right:80%
 
 # NOTE: I'm not sure if I need the following line somewhere 
 # autoload -U compinit && compinit
@@ -69,18 +69,23 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
-
 # export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optioal
 # zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
 # source <(carapace _carapace)
 
 # zstyle ':completion:*:git:*' group-order 'main commands' 'alias commands' 'external commands'
 
+source '/usr/share/zsh-antidote/antidote.zsh'
+antidote load
 
-eval "$(zoxide init zsh --cmd zd)"
 if [ -f ~/.zsh_aliases ]; then
   . ~/.zsh_aliases
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+eval "$(zoxide init zsh --cmd cd)"
 
 eval "$(starship init zsh)"
 

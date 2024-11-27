@@ -1,17 +1,18 @@
 zsh-users/zsh-completions
 
 getantidote/use-omz
-ohmyzsh/ohmyzsh path:lib
-ohmyzsh/ohmyzsh path:plugins/colored-man-pages
-ohmyzsh/ohmyzsh path:plugins/git
-ohmyzsh/ohmyzsh path:plugins/sudo
-ohmyzsh/ohmyzsh path:plugins/archlinux
-ohmyzsh/ohmyzsh path:plugins/nvm
 
 Aloxaf/fzf-tab
 zsh-users/zsh-autosuggestions
 
-romkatv/powerlevel10k kind:fpath
+ohmyzsh/ohmyzsh path:lib
+ohmyzsh/ohmyzsh path:plugins/colored-man-pages
+# ohmyzsh/ohmyzsh path:plugins/git
+ohmyzsh/ohmyzsh path:plugins/sudo
+# ohmyzsh/ohmyzsh path:plugins/archlinux
+# ohmyzsh/ohmyzsh path:plugins/nvm
+
+# romkatv/powerlevel10k kind:fpath
 
 MichaelAquilina/zsh-you-should-use
 
