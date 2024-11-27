@@ -91,3 +91,6 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(starship init zsh)"
 
 export PATH="/home/dan/.cargo/bin:/home/dan/go/bin:$PATH"
+
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

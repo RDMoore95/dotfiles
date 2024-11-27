@@ -153,8 +153,7 @@ unset env
 eval "$(starship init bash)"
 eval "$(zoxide init bash --cmd zd)"
 
-export PATH="/home/dan/.cargo/bin:/snap/bin:$PATH"
+export PATH="/home/dan/.cargo/bin:/snap/bin:/home/dan/go/bin:$PATH"
 
-# bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
