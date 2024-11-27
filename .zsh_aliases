@@ -34,8 +34,8 @@ alias lsa='eza --long --header --accessed --grid --no-user --no-permissions --no
 alias lam='eza --header --long --modified --grid --all --no-user --no-permissions --hyperlink --icons --git-ignore --group-directories-first --sort=modified --color=always'
 alias laa='eza --header --long --accessed --grid --all --no-user --no-permissions --hyperlink --icons --git-ignore --group-directories-first --sort=accessed --color=always'
 alias la='ls -a'
-alias lsl='ls --long'
-alias lal='la --long'
+alias lsl='ls -1 --header --long'
+alias lal='la -1 --header --long'
 
 alias cl='clear'
 
