@@ -1,166 +1,88 @@
-@import "mocha.css";
-@import "rosepine.css";
-
-* {
-  font-family: "Lilex", "Symbols Nerd Font";
-  font-size: 11pt;
-  font-weight: 700;
-  min-height: 0;
-  margin: 0;
-  padding: 0;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-}
-
 * {
   border: none;
-  border-radius: 3px;
-  min-height: 0;
-  /*margin: 1px 1px 0px 1px;*/
-  margin: 0.05em 0.1em 0.05em 0.1em;
+  border-radius: 0;
+  font-family: "Source Sans Pro", "FontAwesome 6 Free";
+  font-size: 15px;
+  box-shadow: none;
+  text-shadow: none;
+  transition-duration: 0s;
 }
 
-#waybar {
-  background-color: transparent;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-  border-radius: 0px;
-  margin: 0px 0px;
+window#waybar {
+  color: rgba(53, 185, 171, 1);
+  background-color: rgba(23, 63, 79, 0.4);
+  border-bottom: 2px solid rgba(53, 185, 171, 0.4);
 }
 
-window#waybar.hidden {
-  opacity: 0.2;
+window#waybar.solo {
+  color: rgba(53, 185, 171, 1);
+}
+
+#workspaces {
+  margin: 0 5px;
+}
+
+#custom-scratchpad {
+  margin: 0px 5px;
+  padding: 0px 5px;
 }
 
 #workspaces button {
-  padding: 0 0px;
-  color: @pine;
-  background-color: transparent;
-  /* Use box-shadow instead of border so the text isn't offset */
-  box-shadow: inset 0 -3px transparent;
-  /* Avoid rounded borders under each workspace name */
-  border: none;
-  border-radius: 0;
+  padding: 0 5px;
+  color: rgba(53, 185, 171, 1);
 }
 
-#workspaces button.active {
-  color: @rose;
+#workspaces button.focused {
+  color: rgba(115, 186, 37, 1);
+}
+
+#workspaces button.visible {
+  color: rgba(115, 186, 37, 1);
 }
 
 #workspaces button.urgent {
-  background-color: @love;
+  color: rgba(33, 164, 223, 1);
 }
 
-#window {
-  /*margin: 6px;*/
-  /*padding-left: 12px;*/
-  /*padding-right: 12px;*/
-  color: @hlgt-med;
-}
-
-#bluetooth,
-#pulseaudio,
-#clock,
+#mode,
 #battery,
 #cpu,
-#temperature,
 #memory,
-#disk,
-#backlight,
-#wireplumber,
-#tray,
 #network,
-#mode,
-#custom-updates,
-#scratchpad {
-  padding: 5px 15px;
-  color: @hlgt-med;
-  border-radius: 20px;
-  background-color: @background;
-  /*margin-top: 2px;*/
-  /*margin-bottom: 2px;*/
-  /*margin-left: 4px;*/
-  /*margin-right: 4px;*/
-  /*padding-left: 4px;*/
-  /*padding-right: 4px;*/
-}
-
-#window,
-#workspaces {
-  border-radius: 20px;
-  padding: 0px 10px;
-  background-color: @background;
-}
-
-.modules-left > widget:first-child > #workspaces {
-  margin-left: 0;
-}
-
-.modules-right > widget:last-child > #workspaces {
-  margin-right: 0;
-}
-
-#custom-updates {
-  color: @love;
-  /*background-color: transparent;*/
-}
-
-#bluetooth {
-  color: @foam;
-  /*border-bottom: 2px solid @sky;*/
-}
-
-#temperature {
-  color: @sage;
-  /*border-bottom: 2px solid @sage;*/
-}
-
-#temperature.critical {
-  color: @love;
-  /*border-bottom: 2px solid @maroon;*/
+#bluetooth,
+#pulseaudio,
+#idle_inhibitor,
+#temperature,
+#custom-layout,
+#backlight {
+  margin: 0px 6px 0px 10px;
+  /*    min-width: 30px;*/
 }
 
 #clock {
-  color: @iris;
-  /*border-bottom: 2px solid @lavender;*/
+  margin: 0px 6px 0px 10px;
 }
 
-#clock.date {
-  color: @iris;
-  /*border-bottom: 2px solid @mauve;*/
+#battery.warning {
+  color: rgba(255, 210, 4, 1);
 }
 
-#pulseaudio {
-  color: @ash;
-  /*border-bottom: 2px solid @pink;*/
+#battery.critical {
+  color: rgba(238, 46, 36, 1);
 }
 
-#network {
-  color: @gold;
-  /*border-bottom: 2px solid @yellow;*/
+#battery.charging {
+  color: rgba(217, 216, 216, 1);
 }
 
-/*#idle_inhibitor {*/
-/*  margin-right: 12px;*/
-/*  color: @ash;*/
-/*}*/
-/**/
-/*#idle_inhibitor.activated {*/
-/*  color: @love;*/
-/*}*/
-
-#battery {
-  color: @sage;
-  border-bottom: 2px solid @sage;
+#bluetooth.disabled {
+  color: rgba(128, 128, 128, 1);
 }
 
-label:focus {
-  background-color: @hlgt-med;
+#bluetooth.off {
+  color: rgba(128, 128, 128, 1);
 }
 
-#custom-vpn {
-  color: @iris;
-  border-radius: 15px;
-  padding-left: 6px;
-  padding-right: 6px;
+#bluetooth.connected {
+  color: rgba(115, 186, 37, 1);
 }
