@@ -150,8 +150,8 @@ fi
 
 unset env
 
-eval "$(starship init bash)"
-eval "$(zoxide init bash --cmd zd)"
+# eval "$(starship init bash)"
+eval "$(zoxide init bash)"
 
 export PATH="/home/dan/.cargo/bin:/snap/bin:/home/dan/go/bin:$PATH"
 
