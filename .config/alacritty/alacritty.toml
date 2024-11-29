@@ -12,7 +12,7 @@ background = "#232136"
 # background = "#393552"
 
 [font]
-normal = {family = "Lilex", style = "Medium"}
+normal = {family = "Lilex Nerd Font Mono", style = "Medium"}
 italic = {family = "Lilex", style = "Medium Italic"}
 bold = {family = "Lilex", style = "Bold"}
 bold_italic = {family = "Lilex", style = "Bold Italic"}
