@@ -45,6 +45,9 @@
 # truncation_symbol = "…󰿟"
 # read_only = "󰌾"
 # read_only_style = "bg:overlay fg:love"
+# 
+# # [directory.substitutions]
+# # '~' = ' ~'
 #
 # [character]
 # success_symbol = "[  󱞪](iris)"
