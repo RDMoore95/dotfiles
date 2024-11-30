@@ -4,7 +4,7 @@
   border: none;
   border-radius: 0;
   font-family: "Lilex", "Symbols Nerd Font";
-  font-size: 11pt;
+  font-size: 10pt;
   box-shadow: none;
   text-shadow: none;
   transition-duration: 0s;
@@ -59,7 +59,7 @@ window#waybar.solo {
 #custom-notification,
 #backlight {
   margin: 0px 12px 0px 12px;
-  min-width: 30px;
+  min-width: 20px;
 }
 
 #window {
