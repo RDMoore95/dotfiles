@@ -92,6 +92,7 @@ output * bg /home/dan/Pictures/wallpapers/perfect-blue-poster.jpg fill
     # Change normal to inverse to use left mouse button for resizing and right
     # mouse button for dragging.
     floating_modifier $mod normal
+    mouse_warping container
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
@@ -101,6 +102,8 @@ output * bg /home/dan/Pictures/wallpapers/perfect-blue-poster.jpg fill
 #
 # Moving around:
 #
+
+    focus_wrapping no
     # Move your focus around
     bindsym $mod+$left focus left
     bindsym $mod+$down focus down

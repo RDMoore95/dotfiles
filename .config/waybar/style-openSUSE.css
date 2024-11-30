@@ -3,21 +3,21 @@
 * {
   border: none;
   border-radius: 0;
-  font-family: "Lilex", "Symbols Nerd Font";
-  font-size: 11pt;
+  font-family: "Lilex", "Lilex Nerd Font Mono";
+  font-size: 15px;
   box-shadow: none;
   text-shadow: none;
   transition-duration: 0s;
 }
 
 window#waybar {
-  color: @iris;
-  background-color: @background;
-  border-bottom: transparent;
+  color: rgba(53, 185, 171, 1);
+  background-color: rgba(23, 63, 79, 0.4);
+  border-bottom: 2px solid rgba(53, 185, 171, 0.4);
 }
 
 window#waybar.solo {
-  color: @iris;
+  color: rgba(53, 185, 171, 1);
 }
 
 #workspaces {
@@ -31,19 +31,19 @@ window#waybar.solo {
 
 #workspaces button {
   padding: 0 5px;
-  color: @pine;
+  color: rgba(53, 185, 171, 1);
 }
 
 #workspaces button.focused {
-  color: @rose;
+  color: rgba(115, 186, 37, 1);
 }
 
 #workspaces button.visible {
-  color: @rose;
+  color: rgba(115, 186, 37, 1);
 }
 
 #workspaces button.urgent {
-  color: @love;
+  color: rgba(33, 164, 223, 1);
 }
 
 #mode,
@@ -56,19 +56,13 @@ window#waybar.solo {
 #idle_inhibitor,
 #temperature,
 #custom-layout,
-#custom-notification,
 #backlight {
-  margin: 0px 12px 0px 12px;
-  min-width: 30px;
-}
-
-#window {
-  color: @foam;
-  margin: 0px 12px 0px 12px;
+  margin: 0px 6px 0px 10px;
+  /*    min-width: 30px;*/
 }
 
 #clock {
-  /*margin: 0px 6px 0px 10px;*/
+  margin: 0px 6px 0px 10px;
 }
 
 #battery.warning {
@@ -84,43 +78,13 @@ window#waybar.solo {
 }
 
 #bluetooth.disabled {
-  color: @love;
+  color: rgba(128, 128, 128, 1);
 }
 
 #bluetooth.off {
-  color: @ash;
+  color: rgba(128, 128, 128, 1);
 }
 
 #bluetooth.connected {
-  color: @foam;
-}
-
-#pulseaudio {
-  color: @persian;
-  /*border-bottom: 2px solid @pink;*/
-}
-
-#network {
-  color: @gold;
-  /*border-bottom: 2px solid @yellow;*/
-}
-
-#cpu {
-  color: @sage;
-}
-
-#memory {
-  color: @gold;
-}
-
-#temperature {
-  color: @sage;
-}
-
-#temperature.critical {
-  color: @love;
-}
-
-#custom-notification {
-  color: @persian;
+  color: rgba(115, 186, 37, 1);
 }

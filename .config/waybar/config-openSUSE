@@ -6,8 +6,8 @@
     // "gtk-layer-shell": "false",
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "custom/scratchpad", "sway/mode", "tray"],
-    "modules-center": ["sway/window", "clock", "custom/notification"],
-    "modules-right": ["custom/zypper", "pulseaudio", "network", "bluetooth", "cpu", "memory", "temperature", "backlight", "battery", "battery#bat2", "custom/layout"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["custom/zypper", "network", "bluetooth", "cpu", "memory", "temperature", "backlight", "battery", "battery#bat2", "pulseaudio", "custom/layout", "clock", "custom/notification"],
     "sway/mode": {
         "format": " {}"
     },
@@ -23,8 +23,8 @@
         }
     },
     "sway/window": {
-        "max-length": 40,
-        "tooltip": true
+        "max-length": 80,
+        "tooltip": false
     },
     "custom/layout": {
         "tooltip": false,
@@ -99,8 +99,8 @@
     },
     "temperature": {
         // "thermal-zone": 2,
-        "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
-        "critical-threshold": 90,
+        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 80,
         // "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
         "format-icons": ["", "", ""]
@@ -135,10 +135,10 @@
     },
     "bluetooth": {
 	"format": "",
-	"format-disabled": "󰂲",
-	"format-off": "󰂲",
-	// "format-connected": "󰂰 {num_connections}",
-	"format-connected": "󰂰 {device_alias}",
+	"format-disabled": "",
+	"format-off": "",
+	"format-connected": " {num_connections}",
+	// "format-connected": " {device_alias}",
 	"tooltip-format": "{controller_address} {status}\n\n{num_connections} connected",
 	"tooltip-format-disabled": "{status}",
 	"tooltip-format-connected": "{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
@@ -147,7 +147,7 @@
 	"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
 	// "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
 	"on-click": "bluetooth toggle; pkill -SIGRTMIN+8 waybar",
-	"on-click-right": "exec alacritty --command=bluetuith --title=bluetuith --config-file=/home/dan/.config/alacritty/alacritty_opaque.toml"
+	"on-click-right": "exec alacritty -e sh -c 'bluetoothctl'"
     },
     "pulseaudio": {
         "format": "{icon}",
@@ -161,7 +161,7 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["󰕿", "󰖀", "󰕾"]
+            "default": ["", "", ""]
         },
         "scroll-step": 10,
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
