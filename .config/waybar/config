@@ -6,8 +6,8 @@
     // "gtk-layer-shell": "false",
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "custom/scratchpad", "sway/mode", "tray"],
-    "modules-center": ["sway/window", "clock", "custom/notification"],
-    "modules-right": ["custom/zypper", "pulseaudio", "network", "bluetooth", "cpu", "memory", "temperature", "backlight", "battery", "battery#bat2", "custom/layout"],
+    "modules-center": ["clock", "custom/notification"],
+    "modules-right": ["sway/window", "custom/zypper", "pulseaudio", "network", "bluetooth", "cpu", "memory", "temperature", "backlight", "battery", "battery#bat2", "custom/layout"],
     "sway/mode": {
         "format": " {}"
     },
