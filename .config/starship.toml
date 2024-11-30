@@ -46,10 +46,13 @@
 # read_only = "󰌾"
 # read_only_style = "bg:overlay fg:love"
 #
+# # [directory.substitutions]
+# # '~' = ' ~'
+#
 # [character]
-# success_symbol = "[  󱞪](iris)"
-# error_symbol = "[  󱞪](love)"
-# vimcmd_symbol = "[  󱞪](sage)"
+# success_symbol = "[ ❯](iris)"
+# error_symbol = "[ ❯](love)"
+# vimcmd_symbol = "[ ❯](sage)"
 #
 # [git_branch]
 # format = "[](fg:overlay)[ $symbol $branch ]($style)[](fg:overlay) "
@@ -160,13 +163,13 @@ truncation_symbol = "…󰿟"
 read_only = "󰌾"
 read_only_style = "fg:love"
 
-[directory.substitutions]
-'~' = ' ~'
+# [directory.substitutions]
+# '~' = ' ~'
 
 [character]
-success_symbol = "[  󱞪](iris)"
-error_symbol = "[  󱞪](love)"
-vimcmd_symbol = "[  󱞪](sage)"
+success_symbol = "[ ❯](iris)"
+error_symbol = "[ ❯](love)"
+vimcmd_symbol = "[ ❯](sage)"
 
 [git_branch]
 # format = "[ $symbol:$branch]($style)"
@@ -181,13 +184,13 @@ disabled = false
 # format = '( [\[$conflicted$untracked$modified$staged$renamed$deleted$stashed\]](fg:love))( [\[$ahead_behind\]](fg:sage))'
 format = '( [\[$conflicted$untracked$modified$staged$renamed$deleted$stashed\]](fg:love))($ahead_behind)'
 # style = "fg:love"
-conflicted = '󱣳'
+conflicted = '󰦎'
 ahead = ' [\[\]](fg:rose)'
 behind = ' [\[\]](fg:rose)'
 diverged = ' [\[\]](fg:rose)'
 up_to_date = '[ ](fg:sage)'
 untracked = ''
-stashed = ''
+stashed = '≡'
 modified = ''
 staged = '󰜘'
 renamed = '󰄾'
