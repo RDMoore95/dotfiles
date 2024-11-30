@@ -50,9 +50,9 @@
 # # '~' = ' ~'
 #
 # [character]
-# success_symbol = "[  󱞪](iris)"
-# error_symbol = "[  󱞪](love)"
-# vimcmd_symbol = "[  󱞪](sage)"
+# success_symbol = "[ 󱞪](iris)"
+# error_symbol = "[ 󱞪](love)"
+# vimcmd_symbol = "[ 󱞪](sage)"
 #
 # [git_branch]
 # format = "[](fg:overlay)[ $symbol $branch ]($style)[](fg:overlay) "
