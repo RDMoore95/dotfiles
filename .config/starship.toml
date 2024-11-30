@@ -1,3 +1,119 @@
+# NOTE: bubble backgrounds section:
+
+# format = """
+# $username\
+# $hostname\
+# $directory\
+# $git_branch\
+# $git_state\
+# $git_status\
+# $cmd_duration\
+# $fill\
+# $python\
+# $nodejs\
+# $time\
+# $line_break\
+# $character\
+# """
+#
+# palette = "rose-pine-moon"
+#
+# [palettes.rose-pine-moon]
+# background = '#232136'
+# surface    = '#2a273f'
+# overlay    = '#393552'
+# muted      = '#6e6a86'
+# subtle     = '#908caa'
+# text       = '#e0def4'
+# love       = '#eb6f92'
+# gold       = '#f6c177'
+# rose       = '#ea9a97'
+# pine       = '#3e8fb0'
+# foam       = '#9ccfd8'
+# iris       = '#c4a7e7'
+# ash        = '#9aa894'
+# sage       = '#c9c8a8'
+# hlgt-low   = '#2a283e'
+# hlgt-med   = '#44415a'
+# hlgt-high  = '#56526e'
+# persian    = '#d88bbd'
+#
+# [directory]
+# format = " [](fg:overlay)[ $path ]($style)[$read_only]($read_only_style)[](fg:overlay) "
+# style = "bg:overlay fg:foam"
+# truncation_length = 3
+# truncation_symbol = "…󰿟"
+# read_only = "󰌾"
+# read_only_style = "bg:overlay fg:love"
+#
+# [character]
+# success_symbol = "[  󱞪](iris)"
+# error_symbol = "[  󱞪](love)"
+# vimcmd_symbol = "[  󱞪](sage)"
+#
+# [git_branch]
+# format = "[](fg:overlay)[ $symbol $branch ]($style)[](fg:overlay) "
+# style = "bg:overlay fg:gold"
+# symbol = ""
+#
+# [git_status]
+# disabled = false
+# # format = "[[( :$conflicted$untracked$modified$staged$renamed$deleted$stashed)](fg:rose)($ahead_behind)](fg:love)"
+# format = '[](fg:overlay)([ $conflicted$untracked$modified$staged$renamed$deleted$stashed ](bg:overlay fg:rose))[ $ahead_behind ](bg:overlay fg:sage)[](fg:overlay) '
+# # format = '[](fg:overlay)([$all_status$ahead_behind](bg:overlay fg:love))[](fg:overlay) '
+# # style = "fg:love"
+# conflicted = '󱣳'
+# ahead = '[](bg:overlay fg:love)'
+# behind = '[](bg:overlay fg:love)'
+# diverged = ''
+# up_to_date = '[](bg:overlay fg:sage)'
+# untracked = ''
+# stashed = ''
+# modified = ''
+# staged = '󰜘'
+# renamed = '󰄾'
+# deleted = ''
+# typechanged = ''
+# # NOTE: if using on WSL insert the line below pointing to the
+# # path to a Windows Starship executable
+# # windows_starship = ''
+#
+# [git_state]
+# format = '\([ $state( $progress_current/$progress_total) ]($style)\) '
+# style = "fg:pine"
+#
+# [cmd_duration]
+# format = "[](fg:overlay)[ $duration ]($style)[](fg:overlay)"
+# style = "fg:text"
+# min_time = 120_000
+# min_time_to_notify = 600_000
+# show_notifications = false
+# disabled = false
+#
+# [fill]
+# symbol = " "
+#
+# [time]
+# disabled = false
+# format = "[](fg:overlay)[  $time ]($style)[](fg:overlay) "
+# style = "bg:overlay fg:iris"
+# time_format = "%I:%M%P"
+# use_12hr = true
+#
+# [python]
+# format = "[](fg:overlay)[ $symbol$virtualenv$version ]($style)[](fg:overlay) "
+# style = "bg:overlay fg:ash"
+# disabled = false
+# symbol = ' '
+#
+# [nodejs]
+# style = "bg:overlay fg:ash"
+# format = "[](fg:overlay)[ $symbol$version ]($style)[](fg:overlay) "
+# disabled = false
+# symbol = "󰎙 "
+
+# NOTE: no bubble backgrounds section:
+
 format = """
 $username\
 $hostname\
@@ -40,48 +156,51 @@ persian    = '#d88bbd'
 format = "[ $path]($style)[$read_only]($read_only_style)"
 style = "fg:foam"
 truncation_length = 3
-truncation_symbol = "…/"
+truncation_symbol = "…󰿟"
 read_only = "󰌾"
 read_only_style = "fg:love"
 
 [character]
-success_symbol = "[ ❯](iris)"
-error_symbol = "[ ❯](love)"
-vimcmd_symbol = "[ ❮](sage)"
+success_symbol = "[  󱞪](iris)"
+error_symbol = "[  󱞪](love)"
+vimcmd_symbol = "[  󱞪](sage)"
 
 [git_branch]
-# format = "[$symbol:$branch]($style)"
-format = "[ $branch]($style)"
+# format = "[ $symbol:$branch]($style)"
+format = " [on](fg:text) [$symbol $branch]($style)"
+# format = "[ $branch]($style)"
 style = "fg:gold"
-symbol = ""
+symbol = ""
 
 [git_status]
 disabled = false
-format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](fg:persian)($ahead_behind$stashed)](fg:love)"
+# format = "[[( :$conflicted$untracked$modified$staged$renamed$deleted$stashed)](fg:rose)($ahead_behind)](fg:love)"
+format = '( [\[$conflicted$untracked$modified$staged$renamed$deleted$stashed\]](fg:love))($ahead_behind)'
 # style = "fg:love"
 conflicted = '󱣳'
-ahead = ''
-behind = ''
+ahead = '[](fg:rose)'
+behind = '[](fg:rose)'
 diverged = ''
-up_to_date = '[ ✓](fg:sage)'
+up_to_date = '[ ](fg:sage)'
 untracked = ''
-stashed = '≡'
+stashed = ''
 modified = ''
-staged = '+'
+staged = '󰜘'
 renamed = '󰄾'
 deleted = ''
 typechanged = ''
+
 # NOTE: if using on WSL insert the line below pointing to the
 # path to a Windows Starship executable
 # windows_starship = ''
 
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = "bright-black"
+style = "fg:pine"
 
 [cmd_duration]
 format = "[ $duration]($style)"
-style = "pine"
+style = "fg:text"
 min_time = 120_000
 min_time_to_notify = 600_000
 show_notifications = false
@@ -92,19 +211,19 @@ symbol = " "
 
 [time]
 disabled = false
-format = "[  $time]($style)"
+format = "[  $time]($style) "
 style = "fg:iris"
 time_format = "%I:%M%P"
 use_12hr = true
 
 [python]
-format = "[$virtualenv]($style)"
+format = "[$symbol$virtualenv$version ]($style)"
 style = "fg:ash"
 disabled = false
 symbol = ' '
 
 [nodejs]
 style = "fg:ash"
-format = "[$symbol$version]($style)"
+format = "[$symbol$version ]($style)"
 disabled = false
 symbol = "󰎙 "
