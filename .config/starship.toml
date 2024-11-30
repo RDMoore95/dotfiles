@@ -1,5 +1,5 @@
-# NOTE: bubble backgrounds section:
-
+# # NOTE: bubble backgrounds section:
+#
 # format = """
 # $username\
 # $hostname\
@@ -45,7 +45,7 @@
 # truncation_symbol = "…󰿟"
 # read_only = "󰌾"
 # read_only_style = "bg:overlay fg:love"
-# 
+#
 # # [directory.substitutions]
 # # '~' = ' ~'
 #
