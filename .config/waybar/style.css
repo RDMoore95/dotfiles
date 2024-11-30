@@ -1,0 +1,126 @@
+@import "rosepine.css";
+
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "Lilex", "Symbols Nerd Font";
+  font-size: 11pt;
+  box-shadow: none;
+  text-shadow: none;
+  transition-duration: 0s;
+}
+
+window#waybar {
+  color: @iris;
+  background-color: @background;
+  border-bottom: transparent;
+}
+
+window#waybar.solo {
+  color: @iris;
+}
+
+#workspaces {
+  margin: 0 5px;
+}
+
+#custom-scratchpad {
+  margin: 0px 5px;
+  padding: 0px 5px;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  color: @pine;
+}
+
+#workspaces button.focused {
+  color: @rose;
+}
+
+#workspaces button.visible {
+  color: @rose;
+}
+
+#workspaces button.urgent {
+  color: @love;
+}
+
+#mode,
+#battery,
+#cpu,
+#memory,
+#network,
+#bluetooth,
+#pulseaudio,
+#idle_inhibitor,
+#temperature,
+#custom-layout,
+#custom-notification,
+#backlight {
+  margin: 0px 12px 0px 12px;
+  min-width: 30px;
+}
+
+#window {
+  color: @foam;
+  margin: 0px 12px 0px 12px;
+}
+
+#clock {
+  /*margin: 0px 6px 0px 10px;*/
+}
+
+#battery.warning {
+  color: rgba(255, 210, 4, 1);
+}
+
+#battery.critical {
+  color: rgba(238, 46, 36, 1);
+}
+
+#battery.charging {
+  color: rgba(217, 216, 216, 1);
+}
+
+#bluetooth.disabled {
+  color: @love;
+}
+
+#bluetooth.off {
+  color: @ash;
+}
+
+#bluetooth.connected {
+  color: @foam;
+}
+
+#pulseaudio {
+  color: @persian;
+  /*border-bottom: 2px solid @pink;*/
+}
+
+#network {
+  color: @gold;
+  /*border-bottom: 2px solid @yellow;*/
+}
+
+#cpu {
+  color: @sage;
+}
+
+#memory {
+  color: @gold;
+}
+
+#temperature {
+  color: @sage;
+}
+
+#temperature.critical {
+  color: @love;
+}
+
+#custom-notification {
+  color: @persian;
+}
