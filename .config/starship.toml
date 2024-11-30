@@ -160,6 +160,9 @@ truncation_symbol = "…󰿟"
 read_only = "󰌾"
 read_only_style = "fg:love"
 
+[directory.substitutions]
+'~' = ' ~'
+
 [character]
 success_symbol = "[  󱞪](iris)"
 error_symbol = "[  󱞪](love)"
@@ -181,7 +184,7 @@ format = '( [\[$conflicted$untracked$modified$staged$renamed$deleted$stashed\]](
 conflicted = '󱣳'
 ahead = '[\[\]](fg:rose)'
 behind = '[\[\]](fg:rose)'
-diverged = ''
+diverged = '[\[\]](fg:rose)'
 up_to_date = '[ ](fg:sage)'
 untracked = ''
 stashed = ''
