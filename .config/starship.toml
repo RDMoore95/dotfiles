@@ -175,13 +175,14 @@ symbol = ""
 [git_status]
 disabled = false
 # format = "[[( :$conflicted$untracked$modified$staged$renamed$deleted$stashed)](fg:rose)($ahead_behind)](fg:love)"
+# format = '( [\[$conflicted$untracked$modified$staged$renamed$deleted$stashed\]](fg:love))( [\[$ahead_behind\]](fg:sage))'
 format = '( [\[$conflicted$untracked$modified$staged$renamed$deleted$stashed\]](fg:love))($ahead_behind)'
 # style = "fg:love"
 conflicted = '󱣳'
 ahead = '[](fg:rose)'
 behind = '[](fg:rose)'
 diverged = ''
-up_to_date = '[ ](fg:sage)'
+up_to_date = '[](fg:sage)'
 untracked = ''
 stashed = ''
 modified = ''
