@@ -1,8 +1,8 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 vim.keymap.set('n', '<leader>o', 'o<Esc>k', { desc = 'Empty Line Below Cursor' })
-vim.keymap.set('n', '<leader>-', '<C-W>h', { desc = 'Split Window Horizontally Below', remap = true })
-vim.keymap.set('n', '<leader>\\', '<C-W>v', { desc = 'Split Window Vertically Right', remap = true })
+vim.keymap.set('n', '<leader>-', '<C-W>s', { desc = 'Split Window Horizontally Below', remap = true })
+vim.keymap.set('n', '<leader>|', '<C-W>v', { desc = 'Split Window Vertically Right', remap = true })
 vim.keymap.set('n', '<C-s>', '<cmd>w<cr>', { desc = 'Save', remap = true })
 vim.keymap.set('n', '<leader>ls', '<cmd>wa<cr>', { desc = 'Save All', remap = true })
 vim.keymap.set('n', '<leader>ll', '<cmd>Lazy<cr>', { desc = 'Lazy', remap = true })
