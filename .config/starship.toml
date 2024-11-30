@@ -84,7 +84,7 @@
 #
 # [cmd_duration]
 # format = "[](fg:overlay)[ $duration ]($style)[](fg:overlay)"
-# style = "fg:text"
+# style = "fg:pine"
 # min_time = 120_000
 # min_time_to_notify = 600_000
 # show_notifications = false
@@ -201,7 +201,7 @@ style = "fg:pine"
 
 [cmd_duration]
 format = "[ $duration]($style)"
-style = "fg:text"
+style = "fg:pine"
 min_time = 120_000
 min_time_to_notify = 600_000
 show_notifications = false
