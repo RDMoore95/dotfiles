@@ -14,9 +14,9 @@ elif [ $1 == "sov" ]; then
 fi
 
 if [ $TO_WORKSPACE -eq 11 ]; then
-    TO_WORKSPACE=1
-elif [ $TO_WORKSPACE -eq 0 ]; then
     TO_WORKSPACE=10
+elif [ $TO_WORKSPACE -eq 0 ]; then
+    TO_WORKSPACE=1
 fi
 
 swaymsg workspace number $TO_WORKSPACE
