@@ -1,0 +1,16 @@
+blur enable
+blur_passes 2
+blur_radius 2
+blur_noise 0
+# blur_brightness 0.1
+# blur_saturation 0.1
+
+corner_radius 6
+
+shadows enable
+shadow_blur_radius 10
+shadow_color $subtle
+# shadow_offset 0 0
+shadow_inactive_color $muted
+
+default_dim_inactive 0.2
