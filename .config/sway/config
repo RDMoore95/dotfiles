@@ -91,7 +91,7 @@ output * bg ~/Pictures/wallpapers/perfect-blue-poster.jpg fill
     # shadow_offset
     shadow_inactive_color $muted
 
-    # default_dim_inactive 1.0
+    default_dim_inactive 0.3
 
     input "1241:41619:OBINS_OBINS_AnnePro2" {
         repeat_rate 70
@@ -113,7 +113,7 @@ output * bg ~/Pictures/wallpapers/perfect-blue-poster.jpg fill
 #
     # Start a terminal
     bindsym $mod+Return exec $term
-    bindsym $mod+R exec brave-browser
+    bindsym $mod+R exec brave
 
     # Kill focused window
     bindsym $mod+Alt+g kill

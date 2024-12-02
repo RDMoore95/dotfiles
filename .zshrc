@@ -34,6 +34,7 @@ unset env
 
 
 # NOTE: To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 # autoload -Uz promptinit && promptinit && prompt powerlevel10k
 
@@ -75,7 +76,7 @@ setopt hist_find_no_dups
 # zstyle ':completion:*' format $'\e[2;37m %d\e[m'
 # source <(carapace _carapace)
 
-zstyle ':completion:*:git:*' group-order 'main commands' 'alias commands' 'external commands'
+# zstyle ':completion:*:git:*' group-order 'main commands' 'alias commands' 'external commands'
 
 source '/usr/share/zsh-antidote/antidote.zsh'
 antidote load
