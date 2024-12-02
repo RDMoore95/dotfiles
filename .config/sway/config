@@ -21,7 +21,9 @@ set $term alacritty
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 #set $menu dmenu_path | dmenu | xargs swaymsg exec --
-set $menu wofi
+# set $menu wofi
+set $menu rofi -show combi -modes combi -combi-modes "window,drun,run"
+bindsym $mod+f exec rofi -show filebrowser -modes filebrowser
 # it is set in config.d/50-openSUSE.conf
 set $base      #232136
 set $surface   #2a273f
@@ -190,7 +192,7 @@ output * bg ~/Pictures/wallpapers/perfect-blue-poster.jpg fill
     bindsym $mod+e layout toggle split
 
     # Make the current focus fullscreen
-    bindsym $mod+f fullscreen
+    bindsym $mod+f11 fullscreen
 
     # Toggle the current focus between tiling and floating mode
     bindsym $mod+Y floating toggle
