@@ -62,24 +62,6 @@ output * bg ~/Pictures/wallpapers/perfect-blue-poster.jpg fill
 #       middle_emulation enabled
 #   }
 
-# swayfx
-    blur enable
-    blur_passes 1
-    blur_radius 1
-    blur_noise 0
-    blur_brightness 0.1
-    blur_contrast 0.1
-    blur_saturation 0.1
-
-    shadows enable
-    shadows_on_csd disable
-    shadow_blur_radius 10
-    shadow_color $subtle
-    # shadow_offset
-    shadow_inactive_color $muted
-
-    default_dim_inactive 0.3
-
     input "1241:41619:OBINS_OBINS_AnnePro2" {
         repeat_rate 70
         repeat_delay 350
