@@ -16,7 +16,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term alacritty --config-file=/home/dan/.config/alacritty/alacritty.toml
+set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -43,7 +43,7 @@ set $persian   #d88bbd
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/dan/Pictures/wallpapers/perfect-blue-poster.jpg fill
+output * bg ~/Pictures/wallpapers/perfect-blue-poster.jpg fill
 #
 # Example configuration:
 #
@@ -131,7 +131,7 @@ output * bg /home/dan/Pictures/wallpapers/perfect-blue-poster.jpg fill
     # Change normal to inverse to use left mouse button for resizing and right
     # mouse button for dragging.
     floating_modifier $mod normal
-    mouse_warping container
+    mouse_warping output
 
     # Reload the configuration file
     bindsym $mod+Alt+c reload
@@ -164,6 +164,16 @@ output * bg /home/dan/Pictures/wallpapers/perfect-blue-poster.jpg fill
     bindsym $mod+Shift+Down move down
     bindsym $mod+Shift+Up move up
     bindsym $mod+Shift+Right move right
+
+    bindsym $mod+Shift+Alt+l move workspace next
+    bindsym $mod+Shift+Alt+h move workspace prev
+
+    # Cycle through workspaces
+    # bindsym $mod+Alt+L workspace next
+    # bindsym $mod+Alt+H workspace prev
+
+    bindsym $mod+Alt+L exec ~/.config/sway/scripts/workspace.sh next
+    bindsym $mod+Alt+H exec ~/.config/sway/scripts/workspace.sh prev
 #
 # Workspaces:
 #
