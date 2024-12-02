@@ -75,7 +75,7 @@ setopt hist_find_no_dups
 # zstyle ':completion:*' format $'\e[2;37m %d\e[m'
 # source <(carapace _carapace)
 
-zstyle ':completion:*:git:*' group-order 'main commands' 'alias commands' 'external commands'
+# zstyle ':completion:*:git:*' group-order 'main commands' 'alias commands' 'external commands'
 
 source '/home/dan/.antidote/antidote.zsh'
 antidote load
