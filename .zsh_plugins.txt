@@ -1,6 +1,6 @@
-zsh-users/zsh-completions
+# zsh-users/zsh-completions
 
-getantidote/use-omz
+# getantidote/use-omz
 
 Aloxaf/fzf-tab
 zsh-users/zsh-autosuggestions
@@ -8,7 +8,7 @@ zsh-users/zsh-autosuggestions
 # ohmyzsh/ohmyzsh path:lib
 # ohmyzsh/ohmyzsh path:plugins/colored-man-pages
 # ohmyzsh/ohmyzsh path:plugins/git
-ohmyzsh/ohmyzsh path:plugins/sudo
+# ohmyzsh/ohmyzsh path:plugins/sudo
 # ohmyzsh/ohmyzsh path:plugins/nvm
 
 # romkatv/powerlevel10k kind:fpath

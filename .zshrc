@@ -42,25 +42,24 @@ unset env
 eval "$(zoxide init zsh --cmd z)"
 source <(fzf --zsh)
 
+# autoload -U compinit && compinit
+
 # zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
 zstyle ':fzf-tab:*' fzf-flags --color=fg:4,fg+:3 --bind=tab:accept
-zstyle ':completion:*' menu no
+# zstyle ':completion:*' menu no
 
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza --oneline --long --no-permissions --no-user --color=always --icons --all --header --modified --sort=modified --reverse $realpath'
 zstyle ':fzf-tab:complete:cd:*' fzf-flags --height=45% --preview-window=right:80% --bind ctrl-y:preview-up --bind ctrl-e:preview-down
 zstyle ':fzf-tab:complete:z:*' fzf-preview 'eza --oneline --long --no-permissions --no-user --color=always --icons --all --header --modified --sort=modified --reverse $realpath'
 zstyle ':fzf-tab:complete:z:*' fzf-flags --height=45% --preview-window=right:80% --bind ctrl-y:preview-up --bind ctrl-e:preview-down
 
-# NOTE: I'm not sure if I need the following line somewhere 
-# autoload -U compinit && compinit
-
 bindkey -e
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 
 HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=1000
+SAVEHIST=1000
 HISTDUP=erase
 setopt appendhistory
 setopt sharehistory
@@ -70,12 +69,14 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
-# export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optioal
-# zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
+export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optioal
 # zstyle ':completion:*' format $'\e[2;37m %d\e[m'
-# source <(carapace _carapace)
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
+source <(carapace _carapace)
 
 # zstyle ':completion:*:git:*' group-order 'main commands' 'alias commands' 'external commands'
+
 
 source '/home/dan/.antidote/antidote.zsh'
 antidote load
@@ -86,7 +87,6 @@ fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-
 
 eval "$(starship init zsh)"
 
