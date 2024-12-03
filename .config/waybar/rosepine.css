@@ -1,4 +1,6 @@
-@define-color background #232136;
+@define-color base       #232136;
+@define-color surface    #2a273f;
+@define-color overlay    #393552;
 @define-color text       #e0def4;
 @define-color love       #eb6f92;
 @define-color gold       #f6c177;
@@ -8,8 +10,9 @@
 @define-color iris       #c4a7e7;
 @define-color ash        #9aa894;
 @define-color sage       #c9c8a8;
+@define-color persian    #d88bbd;
 @define-color subtle     #908caa;
-@define-color persian    #D88BBD;
+@define-color muted      #6e6a86;
 @define-color hlgt-low   #2a283e;
 @define-color hlgt-med   #44415a;
 @define-color hlgt-high  #56526e;
