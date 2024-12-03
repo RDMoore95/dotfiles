@@ -1,4 +1,5 @@
 vim.g.have_nerd_font = true
+vim.g.tmux_navigator_no_wrap = true
 vim.opt.termguicolors = true
 vim.opt.number = true
 vim.opt.relativenumber = true
