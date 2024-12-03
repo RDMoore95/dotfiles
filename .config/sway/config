@@ -143,11 +143,11 @@ output * bg ~/Pictures/wallpapers/perfect-blue-poster.jpg fill
     bindsym $mod+Alt+L exec ~/.config/sway/scripts/workspace.sh next
     bindsym $mod+Alt+H exec ~/.config/sway/scripts/workspace.sh prev
 
-    bindsym $mod+Shift+Alt+l exec ~/.config/sway/scripts/move.sh next
-    bindsym $mod+Shift+Alt+h exec ~/.config/sway/scripts/move.sh prev
+    bindsym $mod+Control+Alt+l exec ~/.config/sway/scripts/move.sh next
+    bindsym $mod+Control+Alt+h exec ~/.config/sway/scripts/move.sh prev
 
-    bindsym $mod+Control+Alt+l exec ~/.config/sway/scripts/moveandswitch.sh next
-    bindsym $mod+Control+Alt+h exec ~/.config/sway/scripts/moveandswitch.sh prev
+    bindsym $mod+Control+l exec ~/.config/sway/scripts/moveandswitch.sh next
+    bindsym $mod+Control+h exec ~/.config/sway/scripts/moveandswitch.sh prev
 
 #
 # Workspaces:
