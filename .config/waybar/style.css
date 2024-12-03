@@ -12,7 +12,7 @@
 
 window#waybar {
   color: @iris;
-  background-color: @background;
+  background-color: @surface;
   border-bottom: transparent;
 }
 
@@ -42,10 +42,15 @@ window#waybar.solo {
   color: @rose;
 }
 
+#workspaces button.persistent {
+  color: @muted;
+}
+
 #workspaces button.urgent {
   color: @love;
 }
 
+#clock,
 #mode,
 #battery,
 #cpu,
@@ -95,8 +100,12 @@ window#waybar.solo {
   color: @foam;
 }
 
+#bluetooth {
+  color: @foam;
+}
+
 #pulseaudio {
-  color: @persian;
+  color: @ash;
   /*border-bottom: 2px solid @pink;*/
 }
 
@@ -106,11 +115,11 @@ window#waybar.solo {
 }
 
 #cpu {
-  color: @sage;
+  color: @rose;
 }
 
 #memory {
-  color: @gold;
+  color: @pine;
 }
 
 #temperature {
