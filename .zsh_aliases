@@ -1,6 +1,8 @@
 alias n='nvim'
 alias n.='nvim .'
 
+alias ..='cd ..'
+
 alias cl='clear'
 
 alias t='tmux'
