@@ -5,7 +5,7 @@ alias cl='clear'
 
 alias t='tmux'
 
-alias pacinstalled='awk "/\[ALPM\] installed/ { print $(NF-1) }" /var/log/pacman.log'
+alias zy='sudo zypper'
 
 alias npmpack='npm ls --depth=0 -global'
 
