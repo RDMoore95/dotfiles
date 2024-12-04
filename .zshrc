@@ -43,7 +43,7 @@ unset env
 eval "$(zoxide init zsh --cmd z)"
 source <(fzf --zsh)
 
-# zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
+zstyle ':fzf-tab:*' fzf-command
 zstyle ':fzf-tab:*' fzf-flags --color=fg:4,fg+:3 --bind=tab:accept
 zstyle ':completion:*' menu no
 
