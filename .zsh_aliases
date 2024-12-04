@@ -1,13 +1,9 @@
 alias n='nvim'
 alias n.='nvim .'
 
-alias cfg='/usr/bin/git --git-dir=/home/dan/.cfg/ --work-tree=/home/dan'
-alias cfgstat='cfg status -uno'
-alias cfgls='cfg ls-tree -r main --name-only'
-alias cfga='cfg add -u'
-alias cfgc='cfg commit -m "updated config without a commit message"'
-alias cfgp='cfg push'
-alias cfgall='cfga && cfgc && cfgp'
+alias cl='clear'
+
+alias t='tmux'
 
 alias pacinstalled='awk "/\[ALPM\] installed/ { print $(NF-1) }" /var/log/pacman.log'
 
@@ -16,17 +12,40 @@ alias npmpack='npm ls --depth=0 -global'
 if command -v batcat 2>&1 >/dev/null; then 
   alias bat='batcat'
 fi
+
 alias grep=rg
 
-function nf() {
-  file="$(fzf --preview 'bat --style=numbers --color=always --line-range :500 {}')"
+alias lg='lazygit'
+
+alias yz='yazi'
+
+function nfh() {
+  file="$(rg --files --hidden --iglob='!.git/*' | fzf --preview 'bat --style=numbers --color=always --line-range :500 {}')"
   if [ ! -z "${file}" ]; then
     nvim $file
   fi
 }
 
-alias lg='lazygit'
-alias yz='yazi'
+function nf() {
+  file="$(rg --files | fzf --preview 'bat --style=numbers --color=always --line-range :500 {}')"
+  if [ ! -z "${file}" ]; then
+    nvim $file
+  fi
+}
+
+function zfh() {
+  dir="$(fd . -t d -H -E '.git' | fzf --no-multi --preview 'eza --header --long --modified --all --no-user --no-permissions --icons --group-directories-last --sort=modified --color=always {}')"
+  if [ ! -z "${dir}" ]; then
+    z $dir
+  fi
+}
+
+function zf() {
+  dir="$(fd . -t d | fzf --no-multi --preview 'eza --header --long --modified --all --no-user --no-permissions --icons --group-directories-last --sort=modified --color=always {}')"
+  if [ ! -z "${dir}" ]; then
+    z $dir
+  fi
+}
 
 alias ls='eza -G --no-permissions --hyperlink --no-user --icons --group-directories-first --color=always'
 alias lsm='eza --long --header --modified --grid --no-user --no-permissions --no-user --hyperlink --icons --git-ignore --group-directories-first --sort=modified --color=always'
@@ -36,15 +55,3 @@ alias laa='eza --header --long --accessed --grid --all --no-user --no-permission
 alias la='ls -a'
 alias lsl='ls -1 --header --long'
 alias lal='la -1 --header --long'
-
-alias cl='clear'
-alias zy='sudo zypper'
-
-function zf() {
-  dir="$(fd . -t d -H | fzf --no-multi --preview 'eza --header --long --modified --all --no-user --no-permissions --icons --group-directories-last --sort=modified --color=always {}')"
-  if [ ! -z "${dir}" ]; then
-    z $dir
-  fi
-}
-
-alias t='tmux'
