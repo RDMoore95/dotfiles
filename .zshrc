@@ -49,9 +49,9 @@ zstyle ':fzf-tab:*' fzf-flags --color=fg:4,fg+:3 --bind=tab:accept
 # zstyle ':completion:*' menu no
 
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza --oneline --long --no-permissions --no-user --color=always --icons --all --header --modified --sort=modified --reverse $realpath'
-zstyle ':fzf-tab:complete:cd:*' fzf-flags --height=45% --preview-window=right:80% --bind ctrl-y:preview-up --bind ctrl-e:preview-down
+zstyle ':fzf-tab:complete:cd:*' fzf-flags --height=45% --preview-window=right:80% --bind=tab:accept
 zstyle ':fzf-tab:complete:z:*' fzf-preview 'eza --oneline --long --no-permissions --no-user --color=always --icons --all --header --modified --sort=modified --reverse $realpath'
-zstyle ':fzf-tab:complete:z:*' fzf-flags --height=45% --preview-window=right:80% --bind ctrl-y:preview-up --bind ctrl-e:preview-down
+zstyle ':fzf-tab:complete:z:*' fzf-flags --height=45% --preview-window=right:80% --bind=tab:accept
 
 bindkey -e
 bindkey '^p' history-search-backward
