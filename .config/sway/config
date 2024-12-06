@@ -94,7 +94,7 @@ output * bg ~/Pictures/wallpapers/perfect-blue-poster.jpg fill
 
     # Terminal utilities
     bindsym $mod+v exec $term --command=clipse --title=clipse --config-file=/home/dan/.config/alacritty/alacritty_opaque.toml
-    bindsym $mod+b exec $term --command=bluetuith --title=bluetuith --config-file=/home/dan/.config/alacritty/alacritty_opaque.toml
+    bindsym $mod+Shift+b exec $term --command=bluetuith --title=bluetuith --config-file=/home/dan/.config/alacritty/alacritty_opaque.toml
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
