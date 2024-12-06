@@ -93,7 +93,7 @@ output * bg ~/Pictures/wallpapers/perfect-blue-poster.jpg fill
     bindsym $mod+Space exec $menu
 
     # Terminal utilities
-    bindsym $mod+v exec $term --command=clipse --title=clipse --config-file=/home/dan/.config/alacritty/alacritty_opaque.toml
+    bindsym $mod+Shift+v exec $term --command=clipse --title=clipse --config-file=/home/dan/.config/alacritty/alacritty_opaque.toml
     bindsym $mod+Shift+b exec $term --command=bluetuith --title=bluetuith --config-file=/home/dan/.config/alacritty/alacritty_opaque.toml
 
     # Drag floating windows by holding down $mod and left mouse button.
@@ -203,8 +203,8 @@ output * bg ~/Pictures/wallpapers/perfect-blue-poster.jpg fill
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
-    bindsym $mod+n splith
-    bindsym $mod+c splitv
+    bindsym $mod+m splith
+    bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
     bindsym $mod+s layout stacking
