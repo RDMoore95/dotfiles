@@ -167,7 +167,7 @@
     "pulseaudio": {
         "format": "{icon} {volume}",
         "format-alt": "{icon}",
-        "format-alt-click": "click-right",
+        "format-alt-click": "click-middle",
         "format-muted": "󰝟",
         "format-icons": {
             "headphones": "",
