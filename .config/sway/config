@@ -10,13 +10,14 @@
 set $mod Mod4
 # exec_always autotiling
 exec_always clipse -listen
+exec_always foot --server
 # Home row direction keys, like vim
 set $left h
 set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term alacritty
+set $term footclient
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -93,8 +94,9 @@ output * bg ~/Pictures/wallpapers/perfect-blue-poster.jpg fill
     bindsym $mod+Space exec $menu
 
     # Terminal utilities
-    bindsym $mod+Shift+v exec $term --command=clipse --title=clipse --config-file=/home/dan/.config/alacritty/alacritty_opaque.toml
-    bindsym $mod+Shift+b exec $term --command=bluetuith --title=bluetuith --config-file=/home/dan/.config/alacritty/alacritty_opaque.toml
+    bindsym $mod+Shift+v exec $term --window-size-pixels=800x800 --override=colors.alpha=1.0 --app-id=clipse clipse
+    bindsym $mod+Shift+b exec $term --window-size-pixels=800x800 --override=colors.alpha=1.0 --app-id=bluetuith bluetuith
+    bindsym $mod+Shift+n exec $term --window-size-pixels=800x800 --override=colors.alpha=1.0 --app-id=nmtui nmtui
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
