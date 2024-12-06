@@ -203,7 +203,7 @@ output * bg ~/Pictures/wallpapers/perfect-blue-poster.jpg fill
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
-    bindsym $mod+m splith
+    bindsym $mod+n splith
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
