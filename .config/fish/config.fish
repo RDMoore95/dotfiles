@@ -25,7 +25,7 @@ if status is-interactive
                 rm -f $SSH_AUTH_SOCK
                 return 4
             else ;
-                echo "Found ssh-agent $SSH_AUTH_SOCK"
+                #echo "Found ssh-agent $SSH_AUTH_SOCK"
                 return 0
             end
         else ;
