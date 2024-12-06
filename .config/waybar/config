@@ -82,8 +82,9 @@
     "clock": {
         // "timezone": "America/New_York",
         // "format": " {:%b %d %Y %R}",
-        // "format": " {:%a %d - %I:%M%p}",
-        "format": "{:%a %b %d, w:%V - %I:%M%p}",
+        // "format": " {:%a %d - %I:%M%p}",
+        // "format": " {:%a %b %d, w:%V - %I:%M%p}",
+        "format": " {:%a, %D, Week %V, %I:%M%p}",
         "tooltip-format": "<span color='#35b9ab'><tt><small>{calendar}</small></tt></span>",
         "calendar": {
             "mode-mon-col"      : 4,
@@ -105,18 +106,18 @@
         "interval": 10
     },
     "cpu": {
-        "format": "{usage}% ",
+        "format": " {usage}%",
         "tooltip": false
     },
     "memory": {
-        "format": "{}% "
+        "format": " {}%"
     },
     "temperature": {
         // "thermal-zone": 2,
         "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
         "critical-threshold": 90,
-        // "format-critical": "{temperatureC}°C {icon}",
-        "format": "{temperatureC}°C {icon}",
+        // "format-critical": "{icon} {temperatureC}°C",
+        "format": "{icon} {temperatureC}°C",
         "format-icons": ["", "", ""]
     },
     "backlight": {
@@ -141,7 +142,7 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "",
+        "format-wifi": " {essid} ({signalStrength}%)",
         "format-ethernet": "",
         "format-linked": "",
         "format-disconnected": "⚠",
@@ -164,8 +165,8 @@
 	"on-click-right": "exec alacritty --command=bluetuith --title=bluetuith --config-file=/home/dan/.config/alacritty/alacritty_opaque.toml"
     },
     "pulseaudio": {
-        "format": "{icon}",
-        "format-alt": "{volume} {icon}",
+        "format": "{icon} {volume}",
+        "format-alt": "{icon}",
         "format-alt-click": "click-right",
         "format-muted": "󰝟",
         "format-icons": {
