@@ -4,7 +4,7 @@
   border: none;
   border-radius: 0;
   font-family: "Lilex", "Symbols Nerd Font";
-  font-size: 10.5pt;
+  font-size: 10pt;
   box-shadow: none;
   text-shadow: none;
   transition-duration: 0s;
@@ -21,7 +21,7 @@ window#waybar.solo {
 }
 
 #workspaces {
-  margin: 0 5px;
+  /*margin: 0 5px;*/
 }
 
 #custom-scratchpad {
@@ -30,7 +30,7 @@ window#waybar.solo {
 }
 
 #workspaces button {
-  padding: 0 5px;
+  padding: 0 2px;
   color: @pine;
 }
 
@@ -63,13 +63,13 @@ window#waybar.solo {
 #custom-layout,
 #custom-notification,
 #backlight {
-  margin: 0px 12px 0px 12px;
-  min-width: 20px;
+  margin: 0px 9px 0px 9px;
+  /*min-width: 10px;*/
 }
 
 #window {
   color: @foam;
-  margin: 0px 12px 0px 12px;
+  margin: 0px 9px 0px 9px;
 }
 
 #clock {
@@ -77,15 +77,19 @@ window#waybar.solo {
 }
 
 #battery.warning {
-  color: rgba(255, 210, 4, 1);
+  color: @sage;
+}
+
+#battery.warning {
+  color: @rose;
 }
 
 #battery.critical {
-  color: rgba(238, 46, 36, 1);
+  color: @love;
 }
 
 #battery.charging {
-  color: rgba(217, 216, 216, 1);
+  color: @gold;
 }
 
 #bluetooth.disabled {
