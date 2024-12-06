@@ -78,6 +78,8 @@ if status is-interactive
     starship init fish | source
     set fish_greeting ""
 
+    fish_add_path ~/.cargo/bin/
+
 end
 
 function mark_prompt_start --on-event fish_prompt
