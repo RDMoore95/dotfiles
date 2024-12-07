@@ -142,6 +142,7 @@ output * bg ~/Pictures/wallpapers/perfect-blue-poster.jpg fill
     # Cycle through workspaces
     # bindsym $mod+Alt+L workspace next
     # bindsym $mod+Alt+H workspace prev
+    bindsym $mod+b workspace back_and_forth
 
     bindsym $mod+Alt+L exec ~/.config/sway/scripts/workspace.sh next
     bindsym $mod+Alt+H exec ~/.config/sway/scripts/workspace.sh prev
