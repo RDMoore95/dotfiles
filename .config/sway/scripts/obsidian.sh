@@ -1,8 +1,9 @@
 #!/usr/bin/bash
 
-if ! pgrep -x "obsidian" > /dev/null
+running=$(swaymsg -t get_tree | grep obsidian)
+if [ -z "$running" ]
 then
-    exec flatpak run md.obsidian.Obsidian &
+    exec obsidian &
 fi
 
 swaymsg workspace number 9
