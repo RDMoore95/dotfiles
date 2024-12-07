@@ -248,9 +248,16 @@ mode "resize" {
     bindsym $left resize grow width 10px
     bindsym $mod+$left resize grow width 130px
     bindsym $down resize shrink height 10px
+    bindsym $mod+$down resize shrink height 130px
     bindsym $up resize grow height 10px
+    bindsym $mod+$up resize grow height 130px
     bindsym $right resize shrink width 10px
     bindsym $mod+$right resize shrink width 130px
+
+    bindsym $mod+Shift+$left move left
+    bindsym $mod+Shift+$down move down
+    bindsym $mod+Shift+$up move up
+    bindsym $mod+Shift+$right move right
 
     # Ditto, with arrow keys
     bindsym Left resize shrink width 10px
