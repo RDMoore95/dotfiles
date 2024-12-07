@@ -93,7 +93,7 @@ output * bg ~/Pictures/wallpapers/perfect-blue-poster.jpg fill
     # Start your launcher
     bindsym $mod+Space exec $menu
 
-    # Terminal utilities
+    # executable shortcuts for programs and terminal utilities
     bindsym $mod+Shift+v exec $term --window-size-pixels=800x800 --override=colors.alpha=1.0 --app-id=clipse clipse
     bindsym $mod+Shift+b exec $term --window-size-pixels=800x800 --override=colors.alpha=1.0 --app-id=bluetuith bluetuith
     bindsym $mod+Shift+n exec $term --window-size-pixels=800x800 --override=colors.alpha=1.0 --app-id=nmtui nmtui
