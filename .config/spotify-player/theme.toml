@@ -1,0 +1,47 @@
+# a theme based on the application's `default` theme
+[[themes]]
+name = "custom"
+[themes.palette]
+# default theme doesn't have `foreground` and `background` specified
+black   = "#393552"
+red     = "#eb6f92"
+green   = "#3e8fb0"
+yellow  = "#f6c177"
+blue    = "#9ccfd8"
+magenta = "#c4a7e7"
+cyan    = "#ea9a97"
+white   = "#e0def4"
+
+bright_black   = "#6e6a86"
+bright_red     = "#eb6f92"
+bright_green   = "#3e8fb0"
+bright_yellow  = "#f6c177"
+bright_blue    = "#9ccfd8"
+bright_magenta = "#c4a7e7"
+bright_cyan    = "#ea9a97"
+bright_white   = "#e0def4"
+[themes.component_style]
+playback_progress_bar = {bg = "#6e6a86", fg = "#e0def4"}
+
+
+[[themes]]
+name = "tokyonight"
+[themes.palette]
+background = "#1f2335"
+foreground = "#c0caf5"
+black = "#414868"
+red = "#f7768e"
+green = "#9ece6a"
+yellow = "#e0af68"
+blue = "#2ac3de"
+magenta = "#bb9af7"
+cyan = "#7dcfff"
+white = "#eee8d5"
+bright_black = "#24283b"
+bright_red = "#ff4499"
+bright_green = "#73daca"
+bright_yellow = "#657b83"
+bright_blue = "#839496"
+bright_magenta = "#ff007c"
+bright_cyan = "#93a1a1"
+bright_white = "#fdf6e3"
