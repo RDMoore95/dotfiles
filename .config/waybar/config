@@ -17,7 +17,8 @@
         "disable-scroll": false,
 	"enable-bar-scroll": true,
         //"format": "{index} {icon}",
-        "format": "{index}",
+        // "format": "{index}",
+        "format": "{icon}",
 	"persistent-workspaces": {
 		"1": [],
 		"2": [],
@@ -29,12 +30,11 @@
 		"8": [],
 		"9": [],
 		"10": [],
-	}
-        //"format-icons": {
-            //"urgent": "",
-            //"focused": "",
-            //"default": ""
-        //}
+	},
+        "format-icons": {
+            "urgent": "",
+            "focused": "",
+        },
     },
     "sway/window": {
         "max-length": 30,
