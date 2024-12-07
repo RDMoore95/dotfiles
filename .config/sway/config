@@ -97,6 +97,7 @@ output * bg ~/Pictures/wallpapers/perfect-blue-poster.jpg fill
     bindsym $mod+Shift+v exec $term --window-size-pixels=800x800 --override=colors.alpha=1.0 --app-id=clipse clipse
     bindsym $mod+Shift+b exec $term --window-size-pixels=800x800 --override=colors.alpha=1.0 --app-id=bluetuith bluetuith
     bindsym $mod+Shift+n exec $term --window-size-pixels=800x800 --override=colors.alpha=1.0 --app-id=nmtui nmtui
+    bindsym $mod+Shift+m exec ~/.config/sway/scripts/spotify.sh
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -106,8 +107,10 @@ output * bg ~/Pictures/wallpapers/perfect-blue-poster.jpg fill
     floating_modifier $mod normal
     mouse_warping output
 
-    # Reload the configuration file
-    bindsym $mod+Alt+c reload
+    # reload the configuration file
+    bindsym $mod+alt+c reload
+
+    bindsym $mod+Shift+e exec swaynag -t warning -m "You are about to exit sway!"
 
 #
 # Moving around:
