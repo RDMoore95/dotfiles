@@ -98,6 +98,7 @@ output * bg ~/Pictures/wallpapers/perfect-blue-poster.jpg fill
     bindsym $mod+Shift+b exec $term --window-size-pixels=800x800 --override=colors.alpha=1.0 --app-id=bluetuith bluetuith
     bindsym $mod+Shift+n exec $term --window-size-pixels=800x800 --override=colors.alpha=1.0 --app-id=nmtui nmtui
     bindsym $mod+Shift+m exec ~/.config/sway/scripts/spotify.sh
+    bindsym $mod+Shift+o exec ~/.config/sway/scripts/obsidian.sh
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
