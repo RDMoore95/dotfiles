@@ -46,7 +46,7 @@ set $persian   #d88bbd
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/Pictures/wallpapers/perfect-blue-poster.jpg fill
+output * bg ~/Pictures/wallpapers/perfect-blue-poster-shrunk.jpg fill
 #
 # Example configuration:
 #
