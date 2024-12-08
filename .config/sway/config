@@ -94,11 +94,11 @@ output * bg ~/Pictures/wallpapers/perfect-blue-poster.jpg fill
     bindsym $mod+Space exec $menu
 
     # executable shortcuts for programs and terminal utilities
-    bindsym $mod+Shift+v exec $term --window-size-pixels=800x800 --override=colors.alpha=1.0 --app-id=clipse clipse
+    bindsym $mod+Alt+v exec $term --window-size-pixels=800x800 --override=colors.alpha=1.0 --app-id=clipse clipse
     bindsym $mod+Shift+b exec $term --window-size-pixels=800x800 --override=colors.alpha=1.0 --app-id=bluetuith bluetuith
     bindsym $mod+Shift+n exec $term --window-size-pixels=800x800 --override=colors.alpha=1.0 --app-id=nmtui nmtui
-    bindsym $mod+Shift+m exec ~/.config/sway/scripts/spotify.sh
-    bindsym $mod+Shift+o exec ~/.config/sway/scripts/obsidian.sh
+    bindsym $mod+Alt+m exec ~/.config/sway/scripts/spotify.sh
+    bindsym $mod+Alt+o exec ~/.config/sway/scripts/obsidian.sh
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -271,7 +271,7 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+Alt+M mode "resize"
+bindsym $mod+Alt+r mode "resize"
 
 #
 # Status Bar:
