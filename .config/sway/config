@@ -248,13 +248,13 @@ mode "resize" {
     # up will shrink the containers height
     # down will grow the containers height
     bindsym $left resize grow width 10px
-    bindsym Shift+$left resize grow width 130px
+    bindsym $mod+$left resize grow width 130px
     bindsym $down resize shrink height 10px
-    bindsym Shift+$down resize shrink height 130px
+    bindsym $mod+$down resize shrink height 130px
     bindsym $up resize grow height 10px
-    bindsym Shift+$up resize grow height 130px
+    bindsym $mod+$up resize grow height 130px
     bindsym $right resize shrink width 10px
-    bindsym Shift+$right resize shrink width 130px
+    bindsym $mod+$right resize shrink width 130px
 
     bindsym $mod+Shift+$left move left
     bindsym $mod+Shift+$down move down
