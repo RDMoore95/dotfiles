@@ -9,9 +9,25 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+set $base      #232136
+set $surface   #2a273f
+set $overlay   #393552
+set $muted     #6e6a86
+set $subtle    #908caa
+set $text      #e0def4
+
+set $love      #eb6f92
+set $gold      #f6c177
+set $rose      #ea9a97
+set $pine      #3e8fb0
+set $foam      #9ccfd8
+set $iris      #c4a7e7
+set $ash       #9aa894
+set $sage      #c9c8a8
+set $persian   #d88bbd
+
 set $mod Mod4
 set $alt Mod1
-
 
 set $left h
 set $down j
@@ -22,6 +38,13 @@ set $right l
 exec_always clipse -listen
 font pango:Lilex, Symbols Nerd Font 10
 
+# border and colors
+# default_border pixel 0
+# default_floating_border pixel 0
+for_window [class="^.*"] border pixel 3
+client.focused $overlay $pine $text $rose
+client.focused_inactive $overlay $iris $text $rose
+client.unfocused $overlay $overlay $text $muted
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
@@ -29,6 +52,7 @@ font pango:Lilex, Symbols Nerd Font 10
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
+focus_wrapping no
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -69,10 +93,25 @@ mouse_warping output
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+set $term alacritty
+bindsym $mod+Return exec $term
 
 # kill focused window
 bindsym $mod+$alt+g kill
+
+for_window [class="clipse"] floating enable resize set 800px 800px
+# for_window [class="clipse"]
+for_window [class="bluetuith"] floating enable
+# for_window [class="bluetuith"]
+for_window [class="nmtui"] floating enable resize set 800px 800px
+# for_window [class="nmtui"]
+assign [class="spotify-player"] 10
+assign [class="obsidian"] 9
+bindsym $mod+$alt+v exec --no-startup-id $term --command=clipse --class=clipse --option=window.opacity=1.0
+bindsym $mod+Shift+b exec --no-startup-id $term --command=bluetuith --class=bluetuith --option=window.opacity=1.0 --option=window.dimensions.columns=150 --option=window.dimensions.lines=35
+bindsym $mod+Shift+n exec --no-startup-id $term --command=nmtui --class=nmtui --option=window.opacity=1.0
+bindsym $mod+$alt+m exec ~/.config/i3/scripts/spotify.sh
+bindsym $mod+$alt+o exec ~/.config/i3/scripts/obsidian.sh
 
 # start dmenu (a program launcher)
 bindsym $mod+space exec --no-startup-id dmenu_run
@@ -102,6 +141,8 @@ bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+Shift+f fullscreen toggle
+
+bindsym $mod+b workspace back_and_forth
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -167,6 +208,14 @@ bindsym $mod+Control+8 move container to workspace number $ws8
 bindsym $mod+Control+9 move container to workspace number $ws9
 bindsym $mod+Control+0 move container to workspace number $ws10
 
+bindsym $mod+$alt+L exec ~/.config/i3/scripts/workspace.sh next
+bindsym $mod+$alt+H exec ~/.config/i3/scripts/workspace.sh prev
+
+bindsym $mod+Control+$alt+l exec ~/.config/i3/scripts/move.sh next
+bindsym $mod+Control+$alt+h exec ~/.config/i3/scripts/move.sh prev
+
+bindsym $mod+Control+l exec ~/.config/i3/scripts/moveandswitch.sh next
+bindsym $mod+Control+h exec ~/.config/i3/scripts/moveandswitch.sh prev
 
 bindsym $mod+Control+D move scratchpad
 bindsym $mod+D scratchpad show
@@ -185,13 +234,13 @@ mode "resize" {
     # up will shrink the containers height
     # down will grow the containers height
     bindsym $left resize grow width 10px
-    bindsym Shift+$left resize grow width 130px
+    bindsym $mod+$left resize grow width 130px
     bindsym $down resize shrink height 10px
-    bindsym Shift+$down resize shrink height 130px
+    bindsym $mod+$down resize shrink height 130px
     bindsym $up resize grow height 10px
-    bindsym Shift+$up resize grow height 130px
+    bindsym $mod+$up resize grow height 130px
     bindsym $right resize shrink width 10px
-    bindsym Shift+$right resize shrink width 130px
+    bindsym $mod+$right resize shrink width 130px
 
     bindsym $mod+Shift+$left move left
     bindsym $mod+Shift+$down move down
@@ -212,9 +261,11 @@ bindsym $mod+$alt+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3status
-}
+exec_always polybar top
+# bar {
+# 	position top
+#         # status_command i3status
+# }
 
 set $screenlock i3lock -i '/home/dan/Pictures/wallpapers/i3lock.png' -e -f
 set $mode_system "(l)ock, lo(g)out, (r)eboot, (s)uspend, (S)hutdown"
@@ -231,4 +282,8 @@ mode $mode_system {
 }
 bindsym $mod+Shift+e mode $mode_system
 
+exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
 exec_always --no-startup-id nitrogen --restore
+exec /usr/libexec/polkit-gnome-authentication-agent-1
+
+# include ~/.config/i3/windowrules.conf
